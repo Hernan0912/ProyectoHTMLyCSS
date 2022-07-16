@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+	*{
+		font-family: 'Ubuntu', sans-serif;
+		padding: 0;
+		margin: 0;
+		font-size: 62.5%;
+	}
+
+	main{
+			background-image: url(../img/carretera.jpg);
+			background-color: rgb(50, 50, 50);
+			background-blend-mode: soft-light;
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: grid;
+			grid-area: main;
+		}
+
+	nav{
+		grid-area: nav;
+	}
+
+	header{
+		grid-area: header;
+	}
+
+	aside{
+		grid-area: aside;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 5rem;
+		border: dimgrey solid 1rem;
+		background-color: grey;
+	}
+
+	aside div ul li{
+		margin: 2rem;
+		list-style: none;
+	}
+
+	footer{
+		grid-area: footer;
+	}
+
+	header img{
+			width: 100%;
+	}
+
+	nav ul{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	nav ul li{
+	    list-style: none;
+	    text-decoration: none;
+	    padding: 0.2rem;
+	    margin-right: 0.6rem;
+	}
+
+	nav ul li a{
+		font-size: 2rem;
+		text-decoration: none;
+		color: black;
+	}
+
+	h1{
+		font-size: 2.5rem;
+		text-align: center;
+		color: white;
+		padding-top: 2rem;
+	}
+
+	h2{
+		text-align: center;
+		font-size: 2rem;
+		padding: 1rem;
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+	label{
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	option{
+		font-size: 1.5rem;
+	}
+
+	textarea{
+		display: flex;
+		justify-content: center;
+	}
+
+	footer div a img{
+		padding: 0.2rem;
+		width: 25%;
+	}
+
+	footer p{
+		font-size: 1rem;
+	}
+
+	p{
+		font-size: 2rem;
+		color: white;
+		padding: 1rem;
+	}
+
+	/*section div a figure{
+		height: auto;
+		width: auto;
+	}*/
+
+	figcaption{
+		background-color: yellow;
+		height: auto;
+		width: auto;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.pie__footer{
+		font-size: 0.5rem;
+		background-color: dimgrey;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 5rem;
+	}
+
+	.botonera{
+		background-image: url(../img/cielo.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: auto;
+	}
+
+	.mapa__ubicacion{
+		display: flex;
+		justify-content: center;
+		width: auto;
+		padding: 1rem;
+	}
+
+	.formulario{
+		margin-left: 1rem;
+		font-size: 5rem;
+		color: white;
+		padding: 1rem;
+	}
+
+	.formulario__pedido{
+		font-size: 3.5rem;
+		padding: 1rem;
+	}
+
+	.formulario__retiro{
+		font-size: 3.5rem;
+		padding: 1rem;
+	}
+
+	.formulario__dos{
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.formulario__consulta{
+		border: lightslategray outset 0.5rem;
+		background-color: lightgrey;
+	}
+
+	.formulario__cancelar{
+		font-size: 2rem;
+		width: 45%;
+		height: auto;
+	}
+
+	.formulario__enviar{
+		font-size: 2rem;
+		width: 45%;
+		height: auto;
+	}
+
+	.botones{
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+
+	.email{
+		margin-bottom: 2rem;
+		font-size: 2.8rem;
+	}
+
+	.coberturas__iconos{
+		text-align: center;
+	}
+
+	.tabla__ubicacion{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		padding: 2rem;
+	}
+
+	.tabla__ubicacion{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		padding: 2rem;
+	}
+
+	.tabla__precios{
+		font-size: 8rem;
+		color: white;
+		border: 1rem double ghostwhite;
+		padding: 1rem;
+		width: auto;
+	}
+
+	.grid__flota{
+		display: grid;
+		grid-template-columns: 20% 80%;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav nav"
+		"header header" 
+		"aside main" 
+		"footer footer";
+		align-content: center;
+		overflow: hidden;
+		width: auto;
+		height: auto;
+	}
+
+	.flota{
+		padding: 2rem;
+	}
+
+	.auto1{
+		display: grid;
+		grid-area: auto1;
+	}
+
+	.auto2{
+		display: grid;
+		grid-area: auto2;
+	}
+
+	.auto3{
+		display: grid;
+		grid-area: auto3;
+	}
+
+	.cam1{
+		display: grid;
+		grid-area: cam1;
+	}
+
+	.cam2{
+		display: grid;
+		grid-area: cam2;
+	}
+
+	.cam3{
+		display: grid;
+		grid-area: cam3;
+	}
+
+	.moto1{
+		display: grid;
+		grid-area: moto1;
+	}
+
+	.moto2{
+		display: grid;
+		grid-area: moto2;
+	}
+
+	/*.imagen{
+		margin-left: 2rem;
+		margin-bottom: 2rem;
+	}*/
+
+	.grid__autos{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		row-gap: 10rem;
+		grid-template-areas: 
+		"auto1 auto2 auto3"
+		"cam1 cam2 cam3"
+		"moto1 moto2";
+		/*border-radius: 5rem;*/
+		background-color: rgba(255, 255, 255, 0.2);
+		padding: 1rem;
+	}
+
+	#indice__logo{
+		width: 5rem;
+	}
+
+@media (max-width: 480px){
+
+	nav ul li a{
+		font-size: 1rem;
+	}
+
+	.grid__flota{
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav"
+		"header" 
+		"main"
+		"aside" 
+		"footer";
+		align-content: center;
+	}
+
+	.grid__autos{
+		grid-template-columns: auto;
+		grid-template-rows: repeat(8, 1fr);
+		grid-template-areas: 
+		"auto1"
+		"auto2"
+		"auto3"
+		"cam1"
+		"cam2"
+		"cam3"
+		"moto1"
+		"moto2";
+		justify-content: center;
+	}
+
+	.imagen{
+		margin-left: 1rem;
+		margin-bottom: 4rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.auto__pie{
+		width: 72.5%;
+	}
+}
+
+@media(min-width: 481px) and (max-width: 780px){
+
+	.grid__autos{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"auto1 auto2"
+		"auto3 cam1"
+		"cam2 cam3"
+		"moto1 moto2";
+	}
+
+	.imagen{
+		margin-left: 1rem;
+		margin-bottom: 6rem;
+		width: auto;
+		height: auto;
+	}
+}
+
+@media(min-width: 781px) and (max-width: 1024px){
+
+	form{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.grid__autos{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"auto1 auto2 auto3"
+		"cam1 cam2 cam3"
+		"moto1 moto2";
+	}
+
+	.imagen{
+		margin: 1rem;
+	}
+
+	.formulario__dos{
+		padding: 2rem;
+		font-size: 100%;
+	}
+
+	.mapa{
+		width: 100%;
+	}
+
+	.fondo__cobertura{
+		display: flex;
+		padding: 2rem;
+	}
+}
+
+@media(min-width: 1024px){
+
+	form{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.formulario{
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.navegacion__seleccion--encendido{
+		color: yellow;
+	}
+
+	.coberturas{
+		padding: 2rem;
+	}
+
+	.fondo__cobertura{
+		display: flex;
+		border-radius: 5rem;
+		background-color: rgba(255, 255, 255, 0.2);
+		padding: 2rem;
+	}
+
+	.coberturas__iconos{
+		border: dashed black; 1rem;
+		margin-left: 1rem;
+	}
+
+	.navegacion__seleccion:hover{
+		color: yellow;
+	}
+
+	.borde{
+		border: black solid 1rem;
+		margin: 1rem;
+	}
+}
+
