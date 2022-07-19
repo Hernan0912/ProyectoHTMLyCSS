@@ -126,6 +126,10 @@
 		text-align: center;
 	}
 
+	.bg-lightblue{
+		background: linear-gradient(to top, lightblue, blue);
+	}
+
 	.pie__footer{
 		font-size: 0.5rem;
 		background-color: dimgrey;
@@ -186,12 +190,14 @@
 		font-size: 2rem;
 		width: 45%;
 		height: auto;
+		background: linear-gradient(to top, red, orange);
 	}
 
 	.formulario__enviar{
 		font-size: 2rem;
 		width: 45%;
 		height: auto;
+		background: linear-gradient(to top, green, lightgreen);
 	}
 
 	.botones{
@@ -311,20 +317,6 @@
 
 	#indice__logo{
 		width: 5rem;
-	}
-
-	@keyframes headerAnimate{
-		0%{background-image: url(../img/header.jpg)}
-		50%{background-image: url(../img/header2.jpg)}
-		100%{background-image: url(../img/header3.jpg)}
-	}
-
-	header{
-		height: 50vh;
-		background-size: cover;
-		animation-name: headerAnimate;
-		animation-duration: 10s;
-		animation-iteration-count: infinite;
 	}
 
 @media (max-width: 480px){
@@ -467,6 +459,14 @@
 	.borde{
 		border: black solid 1rem;
 		margin: 1rem;
+	}
+
+	.formulario__enviar:hover{
+		border: outset 1px black;
+	}
+
+	.formulario__cancelar:hover{
+		border: outset 1px black;
 	}
 }
 
