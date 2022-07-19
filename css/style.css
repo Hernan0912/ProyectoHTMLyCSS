@@ -14,6 +14,7 @@
 			background-size: cover;
 			display: grid;
 			grid-area: main;
+			overflow: hidden;
 		}
 
 	nav{
@@ -325,14 +326,22 @@
 		font-size: 1rem;
 	}
 
+	.formulario{
+		width: 75%;
+	}
+
+	.email{
+		font-size: 2rem;
+	}
+
 	.grid__flota{
 		grid-template-columns: auto;
 		grid-template-rows: auto;
 		grid-template-areas: 
 		"nav"
 		"header" 
-		"main"
-		"aside" 
+		"aside"
+		"main" 
 		"footer";
 		align-content: center;
 	}
@@ -385,7 +394,7 @@
 	}
 }
 
-@media(min-width: 781px) and (max-width: 1024px){
+@media(min-width: 781px){
 
 	form{
 		display: flex;
