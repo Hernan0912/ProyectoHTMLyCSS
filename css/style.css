@@ -337,6 +337,14 @@
 		font-size: 1rem;
 	}
 
+	footer p{
+		margin-left: 1rem;
+	}
+
+	.pie__footer{
+		height: auto;
+	}
+
 	.tabla__precios{
 		font-size: 8rem;
 		color: white;
@@ -418,6 +426,10 @@
 		"auto3 cam1"
 		"cam2 cam3"
 		"moto1 moto2";
+	}
+
+	footer p{
+		margin-left: 1rem;
 	}
 
 	.imagen__flota{
