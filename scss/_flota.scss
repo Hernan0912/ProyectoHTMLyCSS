@@ -1,0 +1,144 @@
+.grid__flota{
+    display: grid;
+    @include media (mobile){
+        grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav"
+		"header" 
+		"aside"
+		"main" 
+		"footer";
+		align-content: center;
+    }
+    
+    @include media (tablet){
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav"
+        "header header" 
+        "aside main" 
+        "footer footer";
+        align-content: center;
+        overflow: hidden;
+        width: auto;
+        height: auto;
+    }
+    
+    .flota{
+        padding: 2rem;
+        }
+    }
+
+.imagen__flota{
+    @include media (mobile){
+        padding: 1rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        border: $black .5rem solid;
+        border-radius: 3rem;
+    }
+
+  @include media (tablet){
+        padding: 1rem;
+        margin: 1rem;
+        border: $black .5rem solid;
+        border-radius: 3rem;
+  }
+}
+
+.auto1{
+    display: grid;
+    grid-area: auto1;
+}
+
+.auto2{
+    display: grid;
+    grid-area: auto2;
+}
+
+.auto3{
+    display: grid;
+    grid-area: auto3;
+}
+
+.cam1{
+    display: grid;
+    grid-area: cam1;
+}
+
+.cam2{
+    display: grid;
+    grid-area: cam2;
+}
+
+.cam3{
+    display: grid;
+    grid-area: cam3;
+}
+
+.moto1{
+    display: grid;
+    grid-area: moto1;
+}
+
+.moto2{
+    display: grid;
+    grid-area: moto2;
+}
+
+.moto3{
+    display: grid;
+    grid-area: moto3;
+}
+
+.grid__autos{
+    @include media(mobile){
+        display: grid;
+        grid-template-columns: auto;
+		grid-template-rows: repeat(8, 1fr);
+		grid-template-areas: 
+		"auto1"
+		"auto2"
+		"auto3"
+		"cam1"
+		"cam2"
+		"cam3"
+		"moto1"
+		"moto2"
+        "moto3";
+		justify-content: center;
+    }
+
+    @include media(tablet){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"auto1 auto2"
+		"auto3 cam1"
+		"cam2 cam3"
+		"moto1 moto2"
+        "moto3      ";
+    }
+
+    @include media(desktop){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "auto1 auto2 auto3"
+		"cam1 cam2 cam3"
+		"moto1 moto2 moto3";
+        background-color: $backColor;
+    }
+}
+
+.auto__pie{
+    background: $degradeGrisBlanco;
+    text-align: center;
+}
+
+

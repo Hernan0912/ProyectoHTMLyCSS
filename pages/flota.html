@@ -9,7 +9,7 @@
 <!--BS CSS-->
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <!--Mi CSS-->
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/main.css">
 <body>
 	<div class="grid__flota">
 
@@ -25,19 +25,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       	<li class="nav-item">
-          <a class="animacion__navbar nav-link" aria-current="page" href="../index.html">Indice</a>
+          <a class="animacion__navbar nav-link" aria-current="page" href="../index.html">INDICE</a>
         </li>
         <li class="nav-item">
-          <a class="animacion__navbar nav-link" aria-current="page" href="../pages/coberturas.html">Coberturas</a>
+          <a class="animacion__navbar nav-link" aria-current="page" href="../pages/coberturas.html">COBERTURAS</a>
         </li>
         <li class="nav-item">
-          <a class="animacion__navbar nav-link active" href="../pages/flota.html">Flota</a>
+          <a class="animacion__navbar nav-link active" href="../pages/flota.html">FLOTA</a>
         </li>
         <li class="nav-item">
-          <a class="animacion__navbar nav-link" href="../pages/precios.html">Precios</a>
+          <a class="animacion__navbar nav-link" href="../pages/precios.html">PRECIOS</a>
         </li>
          <li class="nav-item">
-          <a class="animacion__navbar nav-link " href="../pages/nosotros.html">Nosotros</a>
+          <a class="animacion__navbar nav-link " href="../pages/nosotros.html">NOSOTROS</a>
         </li>
       </ul>
     </div>
@@ -47,9 +47,9 @@
 	<!--Finaliza nav-->
 
 	<!--Inicia header-->
-	<header>
+	<header class="header__image">
 		<!--Inicia Carousel-->
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		<div id="carouselExampleIndicators" class="carousel slide col-lg-10" data-bs-ride="carousel">
 
 			  <div class="carousel-indicators">
 			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -89,61 +89,85 @@
 			<h1>NUESTRA FLOTA</h1>
 			<section class="flota">
 				<div class="grid__autos">
-							<a class="borde" href="">
-								<figure class="auto1 imagen__flota">
-								<img src="../img/auto1.jpg" alt="Renault Logan">
-								<figcaption class="auto__pie">Renault Logan</figcaption>
-								</figure>
-
+							<a class="borde" href="#">
+							<div class="card auto1 imagen__flota">
+								<img src="../img/auto1.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+								  <p class="card-text auto__pie"><code>Renault Logan</code></p>
+								</div>
+							</div>
 							</a>
 
 							<a class="borde" href="">
-								<figure class="auto2 imagen__flota">
-								<img src="../img/auto2.png" alt="VW Gol Trend">
-								<figcaption class="auto__pie">VW Gol Trend</figcaption>
-								</figure>
+								<div class="card auto2 imagen__flota">
+									<img src="../img/auto2.png" class="card-img-top" alt="...">
+									<div class="card-body">
+									<p class="card-text auto__pie"><code>VolksWagen Gol</code></p>
+									</div>
+								</div>
 							</a>
 
 							<a class="borde" href="">
-								<figure class="auto3 imagen__flota">
-								<img src="../img/auto3.png" alt="Nissan Sentra">
-								<figcaption class="auto__pie">Nissan Sentra</figcaption>
-								</figure>
+								<div class="card auto3 imagen__flota">
+									<img src="../img/auto3.png" class="card-img-top" alt="...">
+									<div class="card-body">
+									<p class="card-text auto__pie"><code>Nissan Sentra</code></p>
+									</div>
+								</div>	
 							</a>
 
 							<a class="borde" href="">
-							<figure class="cam1 imagen__flota">
-								<img src="../img/camioneta1.png" alt="Toyota Hilux">
-								<figcaption class="auto__pie">Toyota Hilux</figcaption>
-							</figure>
+								<div class="card cam1 imagen__flota">
+									<img src="../img/camioneta1.png" class="card-img-top" alt="...">
+									<div class="card-body">
+									<p class="card-text auto__pie"><code>Toyota Hilux</code></p>
+									</div>
+								</div>
 							</a>
 
 							<a class="borde" href="">
-								<figure class="cam2 imagen__flota">
-								<img src="../img/camioneta2.png" alt="Chevrolet Tracker">
-								<figcaption class="auto__pie">Chevrolet Tracker</figcaption>
-								</figure>
+								<div class="card cam2 imagen__flota">
+									<img src="../img/camioneta2.png" class="card-img-top" alt="...">
+									<div class="card-body">
+									<p class="card-text auto__pie"><code>Chevrolet Tracker</code></p>
+									</div>
+								</div>	
 							</a>
 
 							<a class="borde" href="">
-								<figure class="cam3 imagen__flota">
-								<img src="../img/camioneta3.png" alt="Nissan H1">
-								<figcaption class="auto__pie">Nissan H1</figcaption>
-								</figure>
+								<div class="card cam3 imagen__flota">
+									<img src="../img/camioneta3.png" class="card-img-top" alt="...">
+									<div class="card-body">
+									<p class="card-text auto__pie"><code>Nissan H1</code></p>
+									</div>
+								</div>
 							</a>
 
 							<a class="borde" href="">
-								<figure class="moto1 imagen__flota">
-								<img src="../img/moto1.jpg" alt="Zanella">
-								<figcaption class="auto__pie">Zanella</figcaption>
-								</figure>
+								<div class="card moto1 imagen__flota">
+									<img src="../img/moto1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									<p class="card-text auto__pie"><code>Zanella</code></p>
+									</div>
+								</div>
 							</a>
 
 							<a class="borde" href="">
-								<figure class="moto2 imagen__flota">
-								<img src="../img/moto2.png" alt="Scooter">
-								<figcaption class="auto__pie">Honda</figcaption>
-								</figure>
+								<div class="card moto2 imagen__flota">
+									<img src="../img/moto2.png" class="card-img-top" alt="...">
+									<div class="card-body">
+									<p class="card-text auto__pie"><code>Honda</code></p>
+									</div>
+								</div>
+							</a>
+							
+							<a class="borde" href="">
+								<div class="card moto3 imagen__flota">
+									<img src="../img/moto3.png" class="card-img-top" alt="...">
+									<div class="card-body">
+									<p class="card-text auto__pie"><code>Scooter</code></p>
+									</div>
+								</div>
 							</a>
 				</div>
 			</section>
@@ -169,15 +193,15 @@
 				<div>
 					<p>Seguinos en nuestras redes sociales:</p>
 				</div>
-				<div>
+				<div class="img-footer">
 					<a href="https://facebook.com" target="_blank">
-						<img src="../img/facebook.png" alt="seguinos en facebook">
+						<img class="redesSociales" src="../img/facebook.png" alt="seguinos en facebook">
 					</a>
 						<a href="https://instagram.com" target="_blank">
-						<img src="../img/instagram.jpg" alt="seguinos en instagram">
+						<img src="../img/instagram.png" alt="seguinos en instagram">
 					</a>
 						<a href="https://twitter.com" target="_blank">
-						<img src="../img/twitter.png" alt="seguinos en twitter">
+						<img class="redesSociales" src="../img/twitter.png" alt="seguinos en twitter">
 					</a>
 				</div>
 				<div>

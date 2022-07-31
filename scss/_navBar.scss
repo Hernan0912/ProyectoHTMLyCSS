@@ -1,0 +1,68 @@
+//nesting - anidacion
+
+nav{
+        background-image: url(../img/cielo.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: space-between;
+		width: auto;
+        grid-area: nav;
+    #indice__logo{
+        width: 5rem;
+    }
+    ul{
+        display: flex;
+		justify-content: space-around;
+        align-items: flex-end;
+		width: 100%;
+            li{
+                list-style: none;
+                text-decoration: none;
+                padding: 0.2rem;
+                margin-right: 0.6rem;
+                a{
+                    font-size: 2rem;
+                    text-decoration: none;
+                    color: $black;
+                    font-family: $fontMain;
+                }
+            }
+    }
+
+    @include media (desktop){
+        .animacion__navbar{
+            background-image: linear-gradient($white, $white);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .5s;
+            &:hover{
+                font-weight: 800;
+                background-size: 100% 2px;
+            }
+        }
+        .nav-link{
+            color:$black !important;
+            font-weight: $textBold;
+        }
+
+        .active{
+            color:$white !important;
+            &:hover{
+                background-size: 0 2px;
+            }
+        }
+    }
+}
+
+    .btn__color{
+        background-color: white;
+        font-size: 3rem;
+    }
+
+
+
+
+
+

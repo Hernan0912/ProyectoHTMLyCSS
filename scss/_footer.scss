@@ -1,0 +1,57 @@
+footer{
+    grid-area: footer;
+    .pie__footer{
+        @include media (mobile){
+            display: flex;
+            flex-direction: column;
+            background-color: $grey;
+            font-size: 0.5rem;
+    }
+        @include media (tablet){
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        div{
+             a{
+                img{
+                    padding: 0.2rem;
+		            width: $w-25;
+                }
+            }
+        }
+        .img-footer{
+            @include media (mobile){
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+            }
+            @include media (tablet){
+                text-align: center;
+                justify-content: space-between;
+            }
+            a{
+                img{
+                    margin-left: 0.5rem;
+                    width: 70%;
+                }
+            }
+            .redesSociales{
+                width: 80%;
+            }
+        }
+
+        p{
+            @include media (mobile){
+                font-size: $textSm + .5rem;
+                text-align: center;
+            }
+            @include media (tablet){
+                margin-left: 1rem;
+                font-size: $textMd - 0.5rem;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300&display=swap");
+.formulario {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 1rem;
+}
+@media (min-width: 280px) {
+  .formulario {
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1024px) {
+  .formulario {
+    flex-direction: row;
+  }
+}
+.formulario label {
+  font-size: 3rem;
+}
+.formulario legend {
+  font-size: 3rem;
+}
+.formulario .email {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.formulario .formulario__pedido {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.formulario .formulario__retiro {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.formulario .formulario__dos {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 780px) {
+  .formulario .formulario__dos {
+    padding: 2rem;
+    font-size: 100%;
+  }
+}
+.formulario .formulario__dos .formulario__consulta {
+  border: dimgrey outset 0.5rem;
+  background-color: beige;
+  font-size: 2rem;
+}
+.formulario .formulario__dos .botones {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.formulario .formulario__dos .botones .formulario__cancelar {
+  font-size: 2rem;
+  width: 45%;
+  height: auto;
+  background: linear-gradient(to top, red, orange);
+}
+.formulario .formulario__dos .botones .formulario__cancelar:hover {
+  border: outset 1px black;
+}
+.formulario .formulario__dos .botones .formulario__enviar {
+  font-size: 2rem;
+  width: 45%;
+  height: auto;
+  background: linear-gradient(to top, green, lightgreen);
+}
+.formulario .formulario__dos .botones .formulario__enviar:hover {
+  border: outset 1px black;
+}
+.formulario select {
+  font-size: 2rem;
+}
+.formulario select option {
+  font-size: 2rem;
+}
+
+@media (min-width: 780px) {
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1024px) {
+  form {
+    flex-direction: column;
+  }
+}
+
+.mapa__ubicacion {
+  padding: 1rem;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+nav {
+  background-image: url(../img/cielo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  grid-area: nav;
+}
+nav #indice__logo {
+  width: 5rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+}
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0.2rem;
+  margin-right: 0.6rem;
+}
+nav ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+@media (min-width: 1024px) {
+  nav .animacion__navbar {
+    background-image: linear-gradient(white, white);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.5s;
+  }
+  nav .animacion__navbar:hover {
+    font-weight: 800;
+    background-size: 100% 2px;
+  }
+  nav .nav-link {
+    color: black !important;
+    font-weight: 700;
+  }
+  nav .active {
+    color: white !important;
+  }
+  nav .active:hover {
+    background-size: 0 2px;
+  }
+}
+
+.btn__color {
+  background-color: white;
+  font-size: 3rem;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+@media (min-width: 280px) {
+  p {
+    font-size: 2rem;
+    color: white;
+    padding: 0 2rem;
+  }
+}
+@media (min-width: 780px) {
+  p {
+    font-size: 2.5rem;
+  }
+}
+
+aside {
+  grid-area: aside;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  border: dimgrey solid 1rem;
+  background-color: grey;
+}
+aside div ul li {
+  margin: 2rem;
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+}
+
+.header__image {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to top, blue, lightblue);
+}
+
+main {
+  background-image: url(../img/carretera.jpg);
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-area: main;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logos__pagos {
+  display: flex;
+}
+@media (min-width: 280px) {
+  .logos__pagos {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 780px) {
+  .logos__pagos {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 280px) {
+  .logos__pagos img {
+    margin: 2rem;
+  }
+}
+
+.navegacion__seleccion--encendido {
+  color: yellow;
+}
+
+.navegacion__seleccion:hover {
+  color: yellow;
+}
+
+.coberturas__iconos {
+  border: dashed black 3px;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.fondo__cobertura {
+  display: flex;
+  border-radius: 5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+}
+
+.coberturas {
+  padding: 2rem;
+}
+
+.borde {
+  margin: 1rem;
+}
+
+.bg-lightblue {
+  background: linear-gradient(to top, lightblue, blue);
+}
+
+.fuente__acordeon p {
+  font-size: 2rem;
+  color: black;
+}
+
+.active {
+  color: white !important;
+}
+
+.accordion {
+  margin-bottom: 4rem;
+}
+.accordion .fuente__acordeon p {
+  margin-left: 1rem;
+}
+
+.tabla__ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+@media (min-width: 280px) {
+  .tabla__ubicacion .tabla__precios {
+    font-size: 8rem;
+    padding: 1rem;
+    color: black;
+    border: 1rem double linear-gradient(to top, white, grey);
+    width: 50%;
+    background: linear-gradient(to top, white, grey);
+  }
+}
+@media (min-width: 780px) {
+  .tabla__ubicacion .tabla__precios {
+    font-size: 15rem;
+    color: black;
+    border: 1rem double linear-gradient(to top, white, grey);
+    padding: 1rem;
+    width: 50%;
+    background: linear-gradient(to top, white, grey);
+  }
+}
+
+.interesTarjetas {
+  background-color: lightblue;
+}
+.interesTarjetas p {
+  font-weight: 700;
+  color: black;
+}
+
+p code {
+  color: black;
+}
+
+.grid__flota {
+  display: grid;
+}
+@media (min-width: 280px) {
+  .grid__flota {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "header" "aside" "main" "footer";
+    align-content: center;
+  }
+}
+@media (min-width: 780px) {
+  .grid__flota {
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav" "header header" "aside main" "footer footer";
+    align-content: center;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+  }
+}
+.grid__flota .flota {
+  padding: 2rem;
+}
+
+@media (min-width: 280px) {
+  .imagen__flota {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: black 0.5rem solid;
+    border-radius: 3rem;
+  }
+}
+@media (min-width: 780px) {
+  .imagen__flota {
+    padding: 1rem;
+    margin: 1rem;
+    border: black 0.5rem solid;
+    border-radius: 3rem;
+  }
+}
+
+.auto1 {
+  display: grid;
+  grid-area: auto1;
+}
+
+.auto2 {
+  display: grid;
+  grid-area: auto2;
+}
+
+.auto3 {
+  display: grid;
+  grid-area: auto3;
+}
+
+.cam1 {
+  display: grid;
+  grid-area: cam1;
+}
+
+.cam2 {
+  display: grid;
+  grid-area: cam2;
+}
+
+.cam3 {
+  display: grid;
+  grid-area: cam3;
+}
+
+.moto1 {
+  display: grid;
+  grid-area: moto1;
+}
+
+.moto2 {
+  display: grid;
+  grid-area: moto2;
+}
+
+.moto3 {
+  display: grid;
+  grid-area: moto3;
+}
+
+@media (min-width: 280px) {
+  .grid__autos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "auto1" "auto2" "auto3" "cam1" "cam2" "cam3" "moto1" "moto2" "moto3";
+    justify-content: center;
+  }
+}
+@media (min-width: 780px) {
+  .grid__autos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "auto1 auto2" "auto3 cam1" "cam2 cam3" "moto1 moto2" "moto3      ";
+  }
+}
+@media (min-width: 1024px) {
+  .grid__autos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "auto1 auto2 auto3" "cam1 cam2 cam3" "moto1 moto2 moto3";
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.auto__pie {
+  background: linear-gradient(to top, white, grey);
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+}
+@media (min-width: 280px) {
+  footer .pie__footer {
+    display: flex;
+    flex-direction: column;
+    background-color: dimgrey;
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 780px) {
+  footer .pie__footer {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+footer .pie__footer div a img {
+  padding: 0.2rem;
+  width: 25%;
+}
+@media (min-width: 280px) {
+  footer .pie__footer .img-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (min-width: 780px) {
+  footer .pie__footer .img-footer {
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+footer .pie__footer .img-footer a img {
+  margin-left: 0.5rem;
+  width: 70%;
+}
+footer .pie__footer .img-footer .redesSociales {
+  width: 80%;
+}
+@media (min-width: 280px) {
+  footer .pie__footer p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media (min-width: 780px) {
+  footer .pie__footer p {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=main.css.map */

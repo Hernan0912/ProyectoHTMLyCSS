@@ -10,7 +10,7 @@
 <!--BS CSS-->
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <!--Mi CSS-->
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/main.css">
 
 <body>
 
@@ -18,28 +18,28 @@
 
 	<nav class="navbar navbar-expand-md navbar-light bg-lightblue">
   	<div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">
-    	<img id="indice__logo" src="./img/logo.jfif" alt="logo de Alpha">
-    </a>
+		<a class="navbar-brand" href="./index.html">
+			<img id="indice__logo" src="./img/logo.jfif" alt="logo de Alpha">
+		</a>
     <button class="navbar-toggler btn__color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       	<li class="nav-item">
-          <a class="animacion__navbar nav-link active" aria-current="page" href="./index.html">Indice</a>
+          <a class="animacion__navbar nav-link active" aria-current="page" href="./index.html">INDICE</a>
         </li>
         <li class="nav-item">
-          <a class="animacion__navbar nav-link" aria-current="page" href="./pages/coberturas.html">Coberturas</a>
+          <a class="animacion__navbar nav-link" aria-current="page" href="./pages/coberturas.html">COBERTURAS</a>
         </li>
         <li class="nav-item">
-          <a class="animacion__navbar nav-link" href="./pages/flota.html">Flota</a>
+          <a class="animacion__navbar nav-link" href="./pages/flota.html">FLOTA</a>
         </li>
         <li class="nav-item">
-          <a class="animacion__navbar nav-link" href="./pages/precios.html">Precios</a>
+          <a class="animacion__navbar nav-link" href="./pages/precios.html">PRECIOS</a>
         </li>
          <li class="nav-item">
-          <a class="animacion__navbar nav-link" href="./pages/nosotros.html">Nosotros</a>
+          <a class="animacion__navbar nav-link" href="./pages/nosotros.html">NOSOTROS</a>
         </li>
       </ul>
     </div>
@@ -48,9 +48,9 @@
 	<!--Finaliza nav-->
 
 	<!--Inicia header-->
-	<header>
+	<header class="header__image">
 		<!--Inicia Carousel-->
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		<div id="carouselExampleIndicators" class="carousel slide col-lg-10" data-bs-ride="carousel">
 
 			  <div class="carousel-indicators">
 			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -100,7 +100,7 @@
 						<input type="email" id="correo" placeholder="mail@ejemplo.com">
 					</div>
 					<fieldset class="formulario__pedido" >
-						<legend>Info de pedido</legend>
+						<legend>Info de pedido:</legend>
 						<div>
 							<label for="auto">Auto</label>
 							<input type="checkbox" id="auto">
@@ -115,7 +115,7 @@
 						</div>
 					</fieldset>
 					<fieldset class="formulario__retiro">
-						<legend>Info de retiro</legend>
+						<legend>Info de retiro:</legend>
 						<div>
 							<label for="casa">Recibir en domicilio</label>
 							<input type="radio" id="casa" name="retiro">
@@ -154,7 +154,7 @@
 					<div>
 						<h2>UBICACION</h2>
 							<div class="mapa__ubicacion">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8317195252894!2d-58.38375288502698!3d-34.60841656525324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad03e68f13b%3A0x77d2b0d75f15235b!2sAv.%209%20de%20Julio%20%26%20Av.%20Rivadavia%2C%20C1009%20CABA!5e0!3m2!1ses!2sar!4v1655262161354!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8317195252894!2d-58.38375288502698!3d-34.60841656525324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad03e68f13b%3A0x77d2b0d75f15235b!2sAv.%209%20de%20Julio%20%26%20Av.%20Rivadavia%2C%20C1009%20CABA!5e0!3m2!1ses!2sar!4v1655262161354!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 					</div>
 		</section>
@@ -164,20 +164,23 @@
 
 	<footer>
 		<div class="pie__footer">
+
 			<div>
 				<p>Seguinos en nuestras redes sociales:</p>
 			</div>
-			<div>
+
+			<div class="img-footer">
 				<a href="https://facebook.com" target="_blank">
-					<img src="./img/facebook.png" alt="seguinos en facebook">
+					<img class="redesSociales" src="./img/facebook.png" alt="seguinos en facebook">
 				</a>
 					<a href="https://instagram.com" target="_blank">
-					<img src="./img/instagram.jpg" alt="seguinos en instagram">
+					<img src="./img/instagram.png" alt="seguinos en instagram">
 				</a>
 					<a href="https://twitter.com" target="_blank">
-					<img src="./img/twitter.png" alt="seguinos en twitter">
+					<img class="redesSociales" src="./img/twitter.png" alt="seguinos en twitter">
 				</a>
 			</div>
+			
 			<div>
 				<p>Derechos reservados Alpha - RentMotors © 2022</p>
 			</div>

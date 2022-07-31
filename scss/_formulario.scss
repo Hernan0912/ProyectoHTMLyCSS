@@ -1,0 +1,99 @@
+.formulario{
+        display: flex;
+        justify-content: space-around;
+        color:$white;
+        padding: 1rem;
+        @include media (mobile){
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        @include media (desktop){
+            flex-direction: row;
+        }
+
+    label{
+        font-size: $textMd;
+    }
+    legend{
+        font-size: $textMd;
+    }
+    .email{
+        margin-bottom: 2rem;
+		font-size: $textMd - 1rem;
+    }
+    .formulario__pedido{
+        font-size: $textMd;
+		padding: 1rem;
+    }
+    .formulario__retiro{
+        font-size: $textMd;
+		padding: 1rem;
+    }
+    .formulario__dos{
+        margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+        @include media (tablet){
+            padding: 2rem;
+		    font-size: 100%;
+        }
+        .formulario__consulta{
+            border: $grey outset 0.5rem;
+		    background-color: $textArea;
+		    font-size: $textMd - 1rem;
+        }
+        .botones{
+            display: flex;
+		    justify-content: space-between;
+		    padding: 1rem;
+            .formulario__cancelar{
+                font-size: 2rem;
+		        width: $w-45;
+		        height: auto;
+		        background: $cancel;
+                &:hover{
+                    border: outset 1px $black;
+                }
+            }
+            .formulario__enviar{
+                font-size: 2rem;
+		        width: $w-45;
+		        height: auto;
+		        background: $submit;
+                &:hover{
+                    border: outset 1px $black;
+                }
+            }
+        }
+    }
+    select{
+        font-size: $textMd - 1rem;
+        option{
+            font-size: $textMd - 1rem;;
+        }
+    }
+}
+
+form{
+    @include media (tablet){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @include media (desktop){
+        flex-direction: column;
+    }
+}
+
+.mapa__ubicacion{
+	padding: 1rem;
+    
+}
+
+iframe{
+    width:100%; 
+    height:500px;
+}
+

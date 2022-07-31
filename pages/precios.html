@@ -9,7 +9,7 @@
 <!--BS CSS-->
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <!--Mi CSS-->
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/main.css">
 <body>
 
 	<!--Inicia NAV-->
@@ -24,19 +24,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       	<li class="nav-item">
-          <a class="animacion__navbar nav-link" aria-current="page" href="../index.html">Indice</a>
+          <a class="animacion__navbar nav-link" aria-current="page" href="../index.html">INDICE</a>
         </li>
         <li class="nav-item">
-          <a class="animacion__navbar nav-link" aria-current="page" href="../pages/coberturas.html">Coberturas</a>
+          <a class="animacion__navbar nav-link" aria-current="page" href="../pages/coberturas.html">COBERTURAS</a>
         </li>
         <li class="nav-item">
-          <a class="animacion__navbar nav-link" href="../pages/flota.html">Flota</a>
+          <a class="animacion__navbar nav-link" href="../pages/flota.html">FLOTA</a>
         </li>
         <li class="nav-item">
-          <a class="animacion__navbar nav-link active" href="../pages/precios.html">Precios</a>
+          <a class="animacion__navbar nav-link active" href="../pages/precios.html">PRECIOS</a>
         </li>
          <li class="nav-item">
-          <a class="animacion__navbar nav-link" href="../pages/nosotros.html">Nosotros</a>
+          <a class="animacion__navbar nav-link" href="../pages/nosotros.html">NOSOTROS</a>
         </li>
       </ul>
     </div>
@@ -46,9 +46,9 @@
 	<!--Finaliza nav-->
 
 	<!--Inicia header-->
-	<header>
+	<header class="header__image">
 		<!--Inicia Carousel-->
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		<div id="carouselExampleIndicators" class="carousel slide col-lg-10" data-bs-ride="carousel">
 
 			  <div class="carousel-indicators">
 			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -110,6 +110,14 @@
 					<td>$4000</td>
 				</tr>
 			</table>
+
+			<div class="interesTarjetas">
+				<P>CON LA COMPRA MEDIANTE CUALQUIER TARJETA DE CRÉDITO:</P>
+				<p>**HASTA 3 CUOTAS SIN INTERÉS**</p>
+				<P>**6 CUOTAS 10% DE INTERÉS**</P>
+				<P>**12 O MAS CUOTAS 20% DE INTERÉS**</P>
+				<p>Telefonos: 4454-6213 / 11-1234-5678 - Av. Rivadavia 50 casi 9 de julio</p>
+			</div>
 		</div>
 
 		<!--inicia acordeon-->
@@ -123,7 +131,7 @@
 			    </h3>
 			    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
 			      <div class="accordion-body">
-			      <p><code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit soluta quis, voluptatibus assumenda accusantium doloremque voluptate iure magnam neque cum et itaque beatae veritatis non quasi aperiam repellat natus.</code></p>		      
+			      <p><code> Aceptamos efectivo (Pesos argentinos, dólares -valor oficial-, euros -valor oficial-), Tarjeta de crédito o débito visa mastercard, Mercado pago </code></p>		      
 			      <div class="logos__pagos"> 
 			     		<img src="../precios/efectivo.png" alt="efectivo"> 
 				      <img src="../precios/mastercard.svg" alt="mastercard">
@@ -136,24 +144,30 @@
 			  <div class="accordion-item">
 			    <h3 class="fuente__acordeon accordion-header" id="panelsStayOpen-headingTwo">
 			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-			        <p>¿PUEDO IR A OTRO PAÍS CON UN AUTO ALQUILADO?</p>
+			        <p>¿PUEDO IR A OTRO PAÍS CON UN VEHÍCULO ALQUILADO?</p>
 			      </button>
 			    </h3>
 			    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
 			      <div class="accordion-body">
-			        <p><code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit soluta quis, voluptatibus assumenda accusantium doloremque voluptate iure magnam neque cum et itaque beatae veritatis non quasi aperiam repellat natus.</code></p>
+			        <p><code>Si, siempre y cuando se haya aclarado al momento de alquilar el vehículo. La empresa no se hace responsable
+						si ocurre un siniestro fuera de los límites del país sin haber sido informado en su debido momento.
+					</code></p>
 			      </div>
 			    </div>
 			  </div>
 			  <div class="accordion-item">
 			    <h3 class="fuente__acordeon accordion-header" id="panelsStayOpen-headingThree">
 			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-			        <p>¿QUE PASA SI ME ROBAN O CHOCAN EL AUTO?</p>
+			        <p>¿QUE PASA SI TE ROBAN O CHOCAN EL VEHÍCULO?</p>
 			      </button>
 			    </h3>
 			    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
 			      <div class="accordion-body">
-			      	<p><code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit soluta quis, voluptatibus assumenda accusantium doloremque voluptate iure magnam neque cum et itaque beatae veritatis non quasi aperiam repellat natus.</code></p>
+			      	<p><code>En caso de robo, dar aviso a la empresa de inmediato, ya que nuestros vehículos cuentan con rastreo satelital,
+						contamos con un convenio con una empresa de seguridad la cuál se encargará de rastrear el vehículo denunciado.
+						En caso de siniestro, la empresa cubre todos los gastos materiales tanto del vehículo de nuestro cliente
+						como de terceros. ALPHA-RentMotors no toma responsabilidad en acciones jurídicas civiles.
+					</code></p>
 			      </div>
 			    </div>
 			  </div>
@@ -166,15 +180,15 @@
 			<div>
 				<p>Seguinos en nuestras redes sociales:</p>
 			</div>
-			<div>
+			<div class="img-footer">
 				<a href="https://facebook.com" target="_blank">
-					<img src="../img/facebook.png" alt="seguinos en facebook">
+					<img class="redesSociales" src="../img/facebook.png" alt="seguinos en facebook">
 				</a>
 					<a href="https://instagram.com" target="_blank">
-					<img src="../img/instagram.jpg" alt="seguinos en instagram">
+					<img src="../img/instagram.png" alt="seguinos en instagram">
 				</a>
 					<a href="https://twitter.com" target="_blank">
-					<img src="../img/twitter.png" alt="seguinos en twitter">
+					<img class="redesSociales" src="../img/twitter.png" alt="seguinos en twitter">
 				</a>
 			</div>
 			<div>

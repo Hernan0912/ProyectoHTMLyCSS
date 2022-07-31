@@ -2,3 +2,5 @@ fuentes/
 *.log
 *.ai
 *.avi
+node_modules/
+css_viejo/

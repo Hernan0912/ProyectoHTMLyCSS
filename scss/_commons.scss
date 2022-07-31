@@ -1,0 +1,199 @@
+*{
+    font-family: $fontMain;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3{
+    font-family: $secondaryFont;
+    font-weight: $textBold;
+    color: $white;
+}
+
+h1{
+    font-size: $textLg;
+	text-align: center;
+	padding-top: 2rem;
+}
+
+h2{
+    text-align: center;
+	padding: 1rem;
+    font-size: $textMd;
+}
+
+h3{
+    font-size: $textSm;
+}
+
+p{
+    @include media (mobile){
+        font-size: $textSm + 1rem;
+        color:$white;
+        padding: 0 2rem;
+    }
+    @include media (tablet){
+        font-size: $textMd - .5rem;
+    }
+  
+}
+
+aside{
+        grid-area: aside;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: $textLg;
+		border: $grey solid 1rem;
+		background-color: $softGrey;
+        div{
+            ul{
+                li{
+                    margin: 2rem;
+                    list-style: none;
+                    font-size: $textMd - 1rem;
+                    text-align: center;
+                }
+            }
+        }
+}
+
+header{
+    grid-area: header;
+}
+
+.header__image{
+    display: flex;
+    justify-content: center;
+    background: $headerColor;
+}
+
+main{
+    background-image: url(../img/carretera.jpg);
+	background-color:$softColor;
+	background-blend-mode: soft-light;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	grid-area: main;
+	overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+	color: $black;
+}
+
+.logos__pagos{
+    display: flex;
+    @include media (mobile){
+        flex-direction: column;
+		align-items: flex-start;
+        }
+        @include media (tablet){
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        img{
+            @include media (mobile){
+            margin: 2rem;
+             }
+         }
+}
+
+.navegacion__seleccion--encendido{
+    color: $thirdColor;
+}
+
+.navegacion__seleccion{
+    &:hover{
+        color: $thirdColor;
+    }
+}
+
+.coberturas__iconos{
+    border: dashed $black 3px;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.fondo__cobertura{
+    display: flex;
+    border-radius: 5rem;
+    background-color: $backColor;
+    padding: 2rem;
+}
+
+.coberturas{
+    padding: 2rem;
+}
+
+.borde{
+    margin: 1rem;
+}
+
+.bg-lightblue{
+    background: $navColor
+}
+
+.fuente__acordeon p{
+    font-size: 2rem;
+    color: $black;
+}
+
+.active{
+    color: $white !important;
+}
+
+.accordion{
+    margin-bottom: 4rem;
+    .fuente__acordeon{
+        p{
+            margin-left: 1rem;
+        }
+    } 
+}
+
+.tabla__ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 2rem;
+    .tabla__precios{
+        @include media (mobile){
+            font-size: 8rem;
+		    padding: 1rem;
+            color:$black;
+            border: 1rem double $degradeGrisBlanco;
+            width: $w-50;
+            background: $degradeGrisBlanco;
+		       
+        }
+        @include media (tablet){
+            font-size: 15rem;
+            color:$black;
+            border: 1rem double $degradeGrisBlanco;
+            padding: 1rem;
+            width: $w-50;
+            background: $degradeGrisBlanco;
+        }
+    }
+}
+
+.interesTarjetas{
+    background-color: $mainColor;
+    p{
+       font-weight: $textBold;
+       color: $black;
+    }
+}
+
+p{
+    code{
+        color: $black;
+    }
+}
+
