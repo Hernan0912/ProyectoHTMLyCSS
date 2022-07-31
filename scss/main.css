@@ -326,21 +326,14 @@ a {
 @media (min-width: 280px) {
   .tabla__ubicacion .tabla__precios {
     font-size: 8rem;
-    padding: 1rem;
     color: black;
     border: 1rem double linear-gradient(to top, white, grey);
-    width: 50%;
     background: linear-gradient(to top, white, grey);
   }
 }
 @media (min-width: 780px) {
   .tabla__ubicacion .tabla__precios {
     font-size: 15rem;
-    color: black;
-    border: 1rem double linear-gradient(to top, white, grey);
-    padding: 1rem;
-    width: 50%;
-    background: linear-gradient(to top, white, grey);
   }
 }
 
