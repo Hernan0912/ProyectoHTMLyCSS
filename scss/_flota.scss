@@ -45,7 +45,6 @@
         padding: 1rem;
         margin: 1rem;
         border: $black .5rem solid;
-        border-radius: 3rem;
   }
 }
 
@@ -133,12 +132,14 @@
 		"cam1 cam2 cam3"
 		"moto1 moto2 moto3";
         background-color: $backColor;
+        border-radius: 3rem;
     }
 }
 
 .auto__pie{
     background: $degradeGrisBlanco;
     text-align: center;
+    font-size: $textSm + 1rem;
 }
 
 

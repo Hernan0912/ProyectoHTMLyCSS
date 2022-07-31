@@ -1,10 +1,17 @@
-@mixin media($breakPoint){
+@mixin media ($breakPoint){
+
     @if $breakPoint==mobile{
-        @media (min-width:280px){
+        @media(max-width:279px){
             @content;
-        }
-        
+        }    
     }
+
+    @if $breakPoint==mobile{
+        @media(min-width:280px){
+            @content;
+        }    
+    }
+
     @if $breakPoint==tablet{
         @media(min-width: 780px){
             @content;

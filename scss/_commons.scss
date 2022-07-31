@@ -114,17 +114,41 @@ a{
     }
 }
 
-.coberturas__iconos{
-    border: dashed $black 3px;
-    margin-left: 1rem;
+.coberturas__moto{
+    margin: 1rem;
     text-align: center;
+    background: $navColor;
+    border-radius: 5rem;
+    .coberturaTitulos{
+        padding-top: 2rem;
+        text-decoration: underline;
+    }
+    P{
+        color: $black;
+        font-weight: $textBold;
+    }
 }
+
+.coberturas__auto{
+    @extend .coberturas__moto;
+        background: $coberturaAuto;
+    }
+
+    .coberturas__camioneta{
+        @extend .coberturas__moto;
+            background: $coberturaCamioneta;
+        }
 
 .fondo__cobertura{
     display: flex;
-    border-radius: 5rem;
-    background-color: $backColor;
     padding: 2rem;
+    @include media (mobile){
+        flex-direction: column;
+    }
+    @include media (tablet){
+        flex-direction: row;
+    }
+
 }
 
 .coberturas{

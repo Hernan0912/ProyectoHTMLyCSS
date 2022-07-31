@@ -5,6 +5,12 @@
   color: white;
   padding: 1rem;
 }
+@media (max-width: 279px) {
+  .formulario {
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
 @media (min-width: 280px) {
   .formulario {
     flex-direction: column;
@@ -192,6 +198,13 @@ h3 {
   font-size: 1rem;
 }
 
+@media (max-width: 279px) {
+  p {
+    font-size: 2rem;
+    color: white;
+    padding: 0 2rem;
+  }
+}
 @media (min-width: 280px) {
   p {
     font-size: 2rem;
@@ -250,6 +263,12 @@ a {
 .logos__pagos {
   display: flex;
 }
+@media (max-width: 279px) {
+  .logos__pagos {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 @media (min-width: 280px) {
   .logos__pagos {
     flex-direction: column;
@@ -260,6 +279,11 @@ a {
   .logos__pagos {
     flex-direction: row;
     justify-content: space-around;
+  }
+}
+@media (max-width: 279px) {
+  .logos__pagos img {
+    margin: 2rem;
   }
 }
 @media (min-width: 280px) {
@@ -276,17 +300,47 @@ a {
   color: yellow;
 }
 
-.coberturas__iconos {
-  border: dashed black 3px;
-  margin-left: 1rem;
+.coberturas__moto, .coberturas__camioneta, .coberturas__auto {
+  margin: 1rem;
   text-align: center;
+  background: linear-gradient(to top, lightblue, blue);
+  border-radius: 5rem;
+}
+.coberturas__moto .coberturaTitulos, .coberturas__camioneta .coberturaTitulos, .coberturas__auto .coberturaTitulos {
+  padding-top: 2rem;
+  text-decoration: underline;
+}
+.coberturas__moto P, .coberturas__camioneta P, .coberturas__auto P {
+  color: black;
+  font-weight: 700;
+}
+
+.coberturas__auto {
+  background: linear-gradient(to top, pink, red);
+}
+
+.coberturas__camioneta {
+  background: linear-gradient(to top, lightgreen, green);
 }
 
 .fondo__cobertura {
   display: flex;
-  border-radius: 5rem;
-  background-color: rgba(255, 255, 255, 0.2);
   padding: 2rem;
+}
+@media (max-width: 279px) {
+  .fondo__cobertura {
+    flex-direction: column;
+  }
+}
+@media (min-width: 280px) {
+  .fondo__cobertura {
+    flex-direction: column;
+  }
+}
+@media (min-width: 780px) {
+  .fondo__cobertura {
+    flex-direction: row;
+  }
 }
 
 .coberturas {
@@ -323,6 +377,14 @@ a {
   align-items: center;
   padding: 2rem;
 }
+@media (max-width: 279px) {
+  .tabla__ubicacion .tabla__precios {
+    font-size: 8rem;
+    color: black;
+    border: 1rem double linear-gradient(to top, white, grey);
+    background: linear-gradient(to top, white, grey);
+  }
+}
 @media (min-width: 280px) {
   .tabla__ubicacion .tabla__precios {
     font-size: 8rem;
@@ -352,6 +414,14 @@ p code {
 .grid__flota {
   display: grid;
 }
+@media (max-width: 279px) {
+  .grid__flota {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "header" "aside" "main" "footer";
+    align-content: center;
+  }
+}
 @media (min-width: 280px) {
   .grid__flota {
     grid-template-columns: auto;
@@ -375,6 +445,16 @@ p code {
   padding: 2rem;
 }
 
+@media (max-width: 279px) {
+  .imagen__flota {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: black 0.5rem solid;
+    border-radius: 3rem;
+  }
+}
 @media (min-width: 280px) {
   .imagen__flota {
     padding: 1rem;
@@ -390,7 +470,6 @@ p code {
     padding: 1rem;
     margin: 1rem;
     border: black 0.5rem solid;
-    border-radius: 3rem;
   }
 }
 
@@ -439,6 +518,15 @@ p code {
   grid-area: moto3;
 }
 
+@media (max-width: 279px) {
+  .grid__autos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "auto1" "auto2" "auto3" "cam1" "cam2" "cam3" "moto1" "moto2" "moto3";
+    justify-content: center;
+  }
+}
 @media (min-width: 280px) {
   .grid__autos {
     display: grid;
@@ -463,16 +551,26 @@ p code {
     grid-template-rows: auto;
     grid-template-areas: "auto1 auto2 auto3" "cam1 cam2 cam3" "moto1 moto2 moto3";
     background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3rem;
   }
 }
 
 .auto__pie {
   background: linear-gradient(to top, white, grey);
   text-align: center;
+  font-size: 2rem;
 }
 
 footer {
   grid-area: footer;
+}
+@media (max-width: 279px) {
+  footer .pie__footer {
+    display: flex;
+    flex-direction: column;
+    background-color: dimgrey;
+    font-size: 0.5rem;
+  }
 }
 @media (min-width: 280px) {
   footer .pie__footer {
@@ -491,6 +589,14 @@ footer {
 footer .pie__footer div a img {
   padding: 0.2rem;
   width: 25%;
+}
+@media (max-width: 279px) {
+  footer .pie__footer .img-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
 }
 @media (min-width: 280px) {
   footer .pie__footer .img-footer {
@@ -512,6 +618,12 @@ footer .pie__footer .img-footer a img {
 }
 footer .pie__footer .img-footer .redesSociales {
   width: 80%;
+}
+@media (max-width: 279px) {
+  footer .pie__footer p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 @media (min-width: 280px) {
   footer .pie__footer p {
