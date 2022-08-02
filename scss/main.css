@@ -1,3 +1,14 @@
+/*$mainColor:lightblue;
+$secondaryColor:blue;
+$thirdColor:yellow;
+$keyColor:red;
+$white:white;
+$black:black;
+$grey:dimgrey;
+$softGrey:grey;
+$textArea:beige;
+$softColor: rgb(50, 50, 50);
+$backColor:rgba(255, 255, 255, 0.2);*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300&display=swap");
 .formulario {
   display: flex;
@@ -61,23 +72,17 @@
   justify-content: space-between;
   padding: 1rem;
 }
-.formulario .formulario__dos .botones .formulario__cancelar {
+.formulario .formulario__dos .botones .formulario__cancelar, .formulario .formulario__dos .botones .formulario__enviar {
   font-size: 2rem;
   width: 45%;
   height: auto;
   background: linear-gradient(to top, red, orange);
 }
-.formulario .formulario__dos .botones .formulario__cancelar:hover {
+.formulario .formulario__dos .botones .formulario__cancelar:hover, .formulario .formulario__dos .botones .formulario__enviar:hover {
   border: outset 1px black;
 }
 .formulario .formulario__dos .botones .formulario__enviar {
-  font-size: 2rem;
-  width: 45%;
-  height: auto;
   background: linear-gradient(to top, green, lightgreen);
-}
-.formulario .formulario__dos .botones .formulario__enviar:hover {
-  border: outset 1px black;
 }
 .formulario select {
   font-size: 2rem;
@@ -183,7 +188,7 @@ h3 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -242,6 +247,10 @@ header {
   display: flex;
   justify-content: center;
   background: linear-gradient(to top, blue, lightblue);
+}
+
+.headerImage {
+  padding-bottom: 4rem;
 }
 
 main {
@@ -315,25 +324,19 @@ a {
   font-weight: 700;
 }
 
-.coberturas__auto {
-  background: linear-gradient(to top, pink, red);
-}
-
-.coberturas__camioneta {
-  background: linear-gradient(to top, lightgreen, green);
-}
-
-.fondo__cobertura {
-  display: flex;
+.coberturas {
   padding: 2rem;
 }
+
 @media (max-width: 279px) {
   .fondo__cobertura {
+    display: flex;
     flex-direction: column;
   }
 }
 @media (min-width: 280px) {
   .fondo__cobertura {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -343,8 +346,12 @@ a {
   }
 }
 
-.coberturas {
-  padding: 2rem;
+.coberturas__auto {
+  background: linear-gradient(to top, pink, red);
+}
+
+.coberturas__camioneta {
+  background: linear-gradient(to top, lightgreen, green);
 }
 
 .borde {
@@ -379,28 +386,57 @@ a {
 }
 @media (max-width: 279px) {
   .tabla__ubicacion .tabla__precios {
-    font-size: 8rem;
+    font-size: 6rem;
     color: black;
     border: 1rem double linear-gradient(to top, white, grey);
     background: linear-gradient(to top, white, grey);
+  }
+  .tabla__ubicacion .tabla__precios td {
+    padding: 0 2rem;
+  }
+  .tabla__ubicacion .tabla__precios th {
+    padding: 0 2rem;
+  }
+  .tabla__ubicacion .tabla__precios .diaPrecio {
+    padding: 0 4rem;
   }
 }
 @media (min-width: 280px) {
   .tabla__ubicacion .tabla__precios {
-    font-size: 8rem;
+    font-size: 6rem;
     color: black;
     border: 1rem double linear-gradient(to top, white, grey);
     background: linear-gradient(to top, white, grey);
   }
+  .tabla__ubicacion .tabla__precios td {
+    padding: 0 2rem;
+  }
+  .tabla__ubicacion .tabla__precios th {
+    padding: 0 2rem;
+  }
+  .tabla__ubicacion .tabla__precios .diaPrecio {
+    padding: 0 4rem;
+  }
 }
 @media (min-width: 780px) {
   .tabla__ubicacion .tabla__precios {
-    font-size: 15rem;
+    font-size: 16rem;
+  }
+  .tabla__ubicacion .tabla__precios td {
+    font-size: 3rem;
+    padding: 0 5rem;
+  }
+  .tabla__ubicacion .tabla__precios th {
+    padding: 0 5rem;
+  }
+  .tabla__ubicacion .tabla__precios .diaPrecio {
+    padding: 0 8rem;
   }
 }
 
 .interesTarjetas {
   background-color: lightblue;
+  margin-top: 2rem;
 }
 .interesTarjetas p {
   font-weight: 700;
@@ -621,12 +657,14 @@ footer .pie__footer .img-footer .redesSociales {
 }
 @media (max-width: 279px) {
   footer .pie__footer p {
+    padding-top: 1rem;
     font-size: 1.5rem;
     text-align: center;
   }
 }
 @media (min-width: 280px) {
   footer .pie__footer p {
+    padding-top: 1rem;
     font-size: 1.5rem;
     text-align: center;
   }

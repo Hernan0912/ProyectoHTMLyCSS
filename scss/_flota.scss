@@ -37,14 +37,14 @@
         margin: 1rem;
         display: flex;
         flex-direction: column;
-        border: $black .5rem solid;
+        border: map-get($map: $paleta, $key: 'black') .5rem solid;
         border-radius: 3rem;
     }
 
   @include media (tablet){
         padding: 1rem;
         margin: 1rem;
-        border: $black .5rem solid;
+        border: map-get($map: $paleta, $key: 'black') .5rem solid;
   }
 }
 

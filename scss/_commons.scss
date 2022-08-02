@@ -10,11 +10,11 @@ h2,
 h3{
     font-family: $secondaryFont;
     font-weight: $textBold;
-    color: $white;
+    color: map-get($map: $paleta, $key: 'white');
 }
 
 h1{
-    font-size: $textLg;
+    font-size: $textLg - 1rem;
 	text-align: center;
 	padding-top: 2rem;
 }
@@ -32,7 +32,7 @@ h3{
 p{
     @include media (mobile){
         font-size: $textSm + 1rem;
-        color:$white;
+        color:map-get($map: $paleta, $key: 'white');
         padding: 0 2rem;
     }
     @include media (tablet){
@@ -47,8 +47,8 @@ aside{
 		justify-content: center;
 		align-items: center;
 		font-size: $textLg;
-		border: $grey solid 1rem;
-		background-color: $softGrey;
+		border: map-get($map: $paleta, $key: 'grey') solid 1rem;
+		background-color: map-get($map: $paleta, $key: 'softGrey');
         div{
             ul{
                 li{
@@ -71,6 +71,10 @@ header{
     background: $headerColor;
 }
 
+.headerImage{
+    padding-bottom: 4rem;
+}
+
 main{
     background-image: url(../img/carretera.jpg);
 	background-color:$softColor;
@@ -84,7 +88,7 @@ main{
 
 a{
     text-decoration: none;
-	color: $black;
+	color: map-get($map: $paleta, $key: 'black');
 }
 
 .logos__pagos{
@@ -105,12 +109,12 @@ a{
 }
 
 .navegacion__seleccion--encendido{
-    color: $thirdColor;
+    color: map-get($map: $paleta, $key: 'thirdColor');
 }
 
 .navegacion__seleccion{
     &:hover{
-        color: $thirdColor;
+        color: map-get($map: $paleta, $key: 'thirdColor');
     }
 }
 
@@ -124,25 +128,18 @@ a{
         text-decoration: underline;
     }
     P{
-        color: $black;
+        color: map-get($map: $paleta, $key: 'black');
         font-weight: $textBold;
     }
 }
 
-.coberturas__auto{
-    @extend .coberturas__moto;
-        background: $coberturaAuto;
-    }
-
-    .coberturas__camioneta{
-        @extend .coberturas__moto;
-            background: $coberturaCamioneta;
-        }
+.coberturas{
+    padding: 2rem;
+}
 
 .fondo__cobertura{
-    display: flex;
-    padding: 2rem;
     @include media (mobile){
+        display: flex;
         flex-direction: column;
     }
     @include media (tablet){
@@ -151,8 +148,14 @@ a{
 
 }
 
-.coberturas{
-    padding: 2rem;
+.coberturas__auto{
+    @extend .coberturas__moto;
+        background: $coberturaAuto;
+}
+
+.coberturas__camioneta{
+    @extend .coberturas__moto;
+        background: $coberturaCamioneta;
 }
 
 .borde{
@@ -165,11 +168,11 @@ a{
 
 .fuente__acordeon p{
     font-size: 2rem;
-    color: $black;
+    color: map-get($map: $paleta, $key: 'black');
 }
 
 .active{
-    color: $white !important;
+    color: map-get($map: $paleta, $key: 'white') !important;
 }
 
 .accordion{
@@ -188,29 +191,50 @@ a{
 	padding: 2rem;
     .tabla__precios{
         @include media (mobile){
-            font-size: 8rem;
-            color:$black;
+            font-size: $textLg + 1rem;
+            color:map-get($map: $paleta, $key: 'black');
             border: 1rem double $degradeGrisBlanco;
             background: $degradeGrisBlanco;
+            td{
+                padding: 0 2rem;
+            }
+            th{
+                padding: 0 2rem;
+            }
+            .diaPrecio{
+                padding: 0 4rem;
+            }
             
         }
         @include media (tablet){
-            font-size: 15rem;
+            font-size: $textExtraLg * 2;
+        
+            td{
+                font-size: $textMd;
+                padding: 0 5rem;
+            }
+            th{
+                padding: 0 5rem;
+            }
+            .diaPrecio{
+                padding: 0 8rem;
+            }
         }
     }
 }
 
 .interesTarjetas{
-    background-color: $mainColor;
+    background-color: map-get($map: $paleta, $key: 'mainColor');
+    margin-top: 2rem;
     p{
        font-weight: $textBold;
-       color: $black;
+       color: map-get($map: $paleta, $key: 'black');
     }
 }
 
 p{
     code{
-        color: $black;
+        color: map-get($map: $paleta, $key: 'black');
     }
 }
 

@@ -24,7 +24,7 @@ nav{
                 a{
                     font-size: 2rem;
                     text-decoration: none;
-                    color: $black;
+                    color: map-get($map: $paleta, $key: 'black');
                     font-family: $fontMain;
                 }
             }
@@ -32,7 +32,7 @@ nav{
 
     @include media (desktop){
         .animacion__navbar{
-            background-image: linear-gradient($white, $white);
+            background-image: linear-gradient(white, white);
             background-position: 0% 100%;
             background-repeat: no-repeat;
             background-size: 0% 2px;
@@ -43,12 +43,12 @@ nav{
             }
         }
         .nav-link{
-            color:$black !important;
+            color:map-get($map: $paleta, $key: 'black') !important;
             font-weight: $textBold;
         }
 
         .active{
-            color:$white !important;
+            color:map-get($map: $paleta, $key: 'white') !important;
             &:hover{
                 background-size: 0 2px;
             }
@@ -57,7 +57,7 @@ nav{
 }
 
     .btn__color{
-        background-color: white;
+        background-color: map-get($map: $paleta, $key: 'white');
         font-size: 3rem;
     }
 

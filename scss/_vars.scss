@@ -1,7 +1,7 @@
 //variables
 
 //colors
-$mainColor:lightblue;
+/*$mainColor:lightblue;
 $secondaryColor:blue;
 $thirdColor:yellow;
 $keyColor:red;
@@ -9,8 +9,9 @@ $white:white;
 $black:black;
 $grey:dimgrey;
 $softGrey:grey;
+$textArea:beige;
 $softColor: rgb(50, 50, 50);
-$backColor:rgba(255, 255, 255, 0.2);
+$backColor:rgba(255, 255, 255, 0.2);*/
 $submit:linear-gradient(to top, green, lightgreen);
 $cancel:linear-gradient(to top, red, orange);
 $navColor:linear-gradient(to top, lightblue,blue);
@@ -18,7 +19,22 @@ $headerColor:linear-gradient(to top, blue,lightblue);
 $coberturaAuto:linear-gradient(to top, pink, red);
 $coberturaCamioneta:linear-gradient(to top, lightgreen, green);
 $degradeGrisBlanco:linear-gradient(to top, white,grey);
-$textArea:beige;
+$softColor: rgb(50, 50, 50);
+$backColor: rgba(255, 255, 255, 0.2);
+
+
+$paleta:(
+    'mainColor':lightblue,
+    'secondaryColor':blue,
+    'thirdColor':yellow,
+    'keyColor':red,
+    'white':white,
+    'black':black,
+    'grey':dimgrey,
+    'softGrey':grey,
+    'textArea':beige,
+);
+ 
 
 //sizing
 $w-100:100%;
