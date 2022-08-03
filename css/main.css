@@ -62,10 +62,32 @@ $backColor:rgba(255, 255, 255, 0.2);*/
     font-size: 100%;
   }
 }
-.formulario .formulario__dos .formulario__consulta {
-  border: black outset 2px;
-  background-color: beige;
-  font-size: 2rem;
+@media (max-width: 279px) {
+  .formulario .formulario__dos .formulario__consulta {
+    border: black outset 2px;
+    background-color: beige;
+    font-size: 2rem;
+    width: 80%;
+    margin-left: 5rem;
+  }
+}
+@media (min-width: 280px) {
+  .formulario .formulario__dos .formulario__consulta {
+    border: black outset 2px;
+    background-color: beige;
+    font-size: 2rem;
+    width: 80%;
+    margin-left: 5rem;
+  }
+}
+@media (min-width: 780px) {
+  .formulario .formulario__dos .formulario__consulta {
+    border: black outset 2px;
+    background-color: beige;
+    font-size: 2rem;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 .formulario .formulario__dos .botones {
   display: flex;
@@ -94,19 +116,11 @@ $backColor:rgba(255, 255, 255, 0.2);*/
 @media (max-width: 279px) {
   form {
     background: grey;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
   }
 }
 @media (min-width: 280px) {
   form {
     background: grey;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
   }
 }
 @media (min-width: 780px) {
@@ -115,18 +129,18 @@ $backColor:rgba(255, 255, 255, 0.2);*/
     flex-direction: row;
     justify-content: space-around;
     background: grey;
-    box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 6px 12px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 6px 12px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 6px 12px 3px rgba(0, 0, 0, 0.75);
   }
 }
 @media (min-width: 1024px) {
   form {
     flex-direction: column;
     background: grey;
-    box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 25px 13px 12px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 25px 13px 12px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 25px 13px 12px 3px rgba(0, 0, 0, 0.75);
   }
 }
 
