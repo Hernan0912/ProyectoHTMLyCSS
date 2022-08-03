@@ -4,7 +4,7 @@ footer{
         @include media (mobile){
             display: flex;
             flex-direction: column;
-            background-color: map-get($map: $paleta, $key: 'grey');
+            background-color: map-get($map: $paleta, $key: 'black');
             font-size: 0.5rem;
     }
         @include media (tablet){

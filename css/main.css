@@ -13,7 +13,7 @@ $backColor:rgba(255, 255, 255, 0.2);*/
 .formulario {
   display: flex;
   justify-content: space-around;
-  color: white;
+  color: black;
   padding: 1rem;
 }
 @media (max-width: 279px) {
@@ -63,7 +63,7 @@ $backColor:rgba(255, 255, 255, 0.2);*/
   }
 }
 .formulario .formulario__dos .formulario__consulta {
-  border: dimgrey outset 0.5rem;
+  border: black outset 2px;
   background-color: beige;
   font-size: 2rem;
 }
@@ -91,16 +91,42 @@ $backColor:rgba(255, 255, 255, 0.2);*/
   font-size: 2rem;
 }
 
+@media (max-width: 279px) {
+  form {
+    background: grey;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+  }
+}
+@media (min-width: 280px) {
+  form {
+    background: grey;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+  }
+}
 @media (min-width: 780px) {
   form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background: grey;
+    box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
   }
 }
 @media (min-width: 1024px) {
   form {
     flex-direction: column;
+    background: grey;
+    box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 37px 42px 0px 3px rgba(0, 0, 0, 0.75);
   }
 }
 
@@ -362,20 +388,18 @@ a {
   background: linear-gradient(to top, lightblue, blue);
 }
 
+.accordion {
+  margin-bottom: 4rem;
+}
+
 .fuente__acordeon p {
   font-size: 2rem;
   color: black;
+  margin-left: 1rem;
 }
 
 .active {
   color: white !important;
-}
-
-.accordion {
-  margin-bottom: 4rem;
-}
-.accordion .fuente__acordeon p {
-  margin-left: 1rem;
 }
 
 .tabla__ubicacion {
@@ -604,7 +628,7 @@ footer {
   footer .pie__footer {
     display: flex;
     flex-direction: column;
-    background-color: dimgrey;
+    background-color: black;
     font-size: 0.5rem;
   }
 }
@@ -612,7 +636,7 @@ footer {
   footer .pie__footer {
     display: flex;
     flex-direction: column;
-    background-color: dimgrey;
+    background-color: black;
     font-size: 0.5rem;
   }
 }

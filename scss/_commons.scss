@@ -166,22 +166,18 @@ a{
     background: $navColor
 }
 
+.accordion{
+    margin-bottom: 4rem;
+}
+
 .fuente__acordeon p{
     font-size: 2rem;
     color: map-get($map: $paleta, $key: 'black');
+    margin-left: 1rem;
 }
 
 .active{
     color: map-get($map: $paleta, $key: 'white') !important;
-}
-
-.accordion{
-    margin-bottom: 4rem;
-    .fuente__acordeon{
-        p{
-            margin-left: 1rem;
-        }
-    } 
 }
 
 .tabla__ubicacion{
