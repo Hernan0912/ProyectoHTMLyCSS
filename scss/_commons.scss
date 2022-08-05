@@ -171,6 +171,18 @@ a{
     margin-bottom: 4rem;
 }
 
+.accordion-button{
+    background: $headerColor;
+}
+
+.accordion-body{
+    background-color: map-get($map: $paleta, $key: 'mainColor');
+}
+
+.accordion-item{
+    background-color: map-get($map: $paleta, $key: 'secondaryColor');
+}
+
 .fuente__acordeon p{
     font-size: 2rem;
     color: map-get($map: $paleta, $key: 'black');

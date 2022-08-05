@@ -406,6 +406,18 @@ a {
   margin-bottom: 4rem;
 }
 
+.accordion-button {
+  background: linear-gradient(to top, blue, lightblue);
+}
+
+.accordion-body {
+  background-color: lightblue;
+}
+
+.accordion-item {
+  background-color: blue;
+}
+
 .fuente__acordeon p {
   font-size: 2rem;
   color: black;
