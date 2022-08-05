@@ -163,7 +163,8 @@ nav {
   grid-area: nav;
 }
 nav #indice__logo {
-  width: 5rem;
+  width: 6rem;
+  margin-left: 2rem;
 }
 nav ul {
   display: flex;
