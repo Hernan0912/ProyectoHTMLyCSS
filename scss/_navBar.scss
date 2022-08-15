@@ -1,16 +1,23 @@
 //nesting - anidacion
 
 nav{
-        background-image: url(../img/cielo.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
 		display: flex;
 		justify-content: space-between;
 		width: auto;
         grid-area: nav;
     #indice__logo{
-        width: 6rem;
-        margin-left: 2rem;
+        @include media (mobile){
+            width: 6rem;
+            margin-left: 2rem;
+            border-radius: 50%;
+        }
+        @include media (desktop){
+            &:hover{
+                animation-name: girar;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+        }
     }
     ul{
         display: flex;
@@ -60,6 +67,14 @@ nav{
     .btn__color{
         background-color: map-get($map: $paleta, $key: 'white');
         font-size: 3rem;
+    }
+
+    @keyframes girar {
+        from{
+            transform: rotate(0deg);
+        }to{
+            transform: rotate(360deg);
+        }
     }
 
 

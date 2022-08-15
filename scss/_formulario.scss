@@ -13,7 +13,12 @@
         }
 
     label{
-        font-size: $textMd;
+        @include media (mobile){
+            font-size: $textMd - 1rem;
+        }
+        @include media (tablet){
+            font-size: $textMd;
+        }
     }
     legend{
         font-size: $textMd;
@@ -44,7 +49,7 @@
                 background-color: map-get($map: $paleta, $key: 'textArea');
                 font-size: $textMd - 1rem;
                 width: 80%;
-                margin-left: 5rem;
+                margin-left: 3.5rem;
             }
             @include media (tablet){
             border: map-get($map: $paleta, $key: 'black') outset 2px;
@@ -60,16 +65,17 @@
 		    padding: 1rem;
             .formulario__cancelar{
                 font-size: 2rem;
+                font-weight: $textBold;
 		        width: $w-45;
 		        height: auto;
-		        background: $cancel;
+                background-color: map-get($map: $paleta, $key: 'orange');
                 &:hover{
                     border: outset 1px map-get($map: $paleta, $key: 'black');
                 }
             }
             .formulario__enviar{
                 @extend .formulario__cancelar;
-		        background: $submit;
+		        background-color: map-get($map: $paleta, $key: 'lightgreen');
             }
         }
     }
@@ -83,13 +89,12 @@
 
 form{
     @include media (mobile){
-        background:map-get($map: $paleta, $key: 'softGrey');
+        background:$degradeBlancoCeleste;
     }
     @include media (tablet){
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background:map-get($map: $paleta, $key: 'softGrey');
         box-shadow: 10px 6px 12px 3px rgba(0,0,0,0.75);
         -webkit-box-shadow: 10px 6px 12px 3px rgba(0,0,0,0.75);
         -moz-box-shadow: 10px 6px 12px 3px rgba(0,0,0,0.75);
@@ -97,7 +102,7 @@ form{
 
     @include media (desktop){
         flex-direction: column;
-        background:map-get($map: $paleta, $key: 'softGrey');
+        width: 50%;
         box-shadow: 17px 5px 10px 3px rgba(0,0,0,0.75);
         -webkit-box-shadow: 17px 5px 10px 3px rgba(0,0,0,0.75);
         -moz-box-shadow: 17px 5px 10px 3px rgba(0,0,0,0.75);
@@ -110,7 +115,55 @@ form{
 }
 
 iframe{
-    width:100%; 
-    height:500px;
+    @include media (mobile){
+        width:100%; 
+        height:500px;
+    }
+    @include media (tablet){
+        width:100%; 
+        height:700px;
+    }
+    @include media (desktop){
+        width:600px; 
+        height:800px;
+    }     
+}
+
+.reserva{
+    @include media (mobile){
+        margin-bottom: 2rem;
+        font-size: $textSm + .5rem;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 2rem;
+    }
+    @include media (tablet){
+        font-size: $textMd - 1rem;
+    }
+}
+
+#reserva{
+    background-color: map-get($map: $paleta, $key: 'mainColor');
+}
+
+.solicitar{
+    @include media (mobile){
+        font-weight: $textBold;
+        text-align: center;
+        background: map-get($map: $paleta, $key: 'softGrey');
+        margin: 2rem;
+        justify-content: center;
+        .boton__solicitar{
+            p{
+                color: map-get($map: $paleta, $key: 'black');
+            }
+        }
+    }
+    @include media (desktop){
+        &:hover{
+            background: $degradeGrisBlanco;
+        }
+    }   
 }
 

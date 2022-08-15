@@ -1,8 +1,15 @@
 footer{
-    grid-area: footer;
+    @include media (mobile){
+        grid-area: footer;
+
+    }
+    @include media (tablet){
+        grid-area: footer;
+    }
     .pie__footer{
         @include media (mobile){
             display: flex;
+            height: 100%;
             flex-direction: column;
             background-color: map-get($map: $paleta, $key: 'black');
             font-size: 0.5rem;
@@ -53,6 +60,15 @@ footer{
                 font-size: $textMd - 0.5rem;
             }
         }
+    }
+}
+
+#footer__large{
+    @include media (mobile){
+        height: 80vh;
+    }
+    @include media (tablet){
+        height: 40vh;
     }
 }
 

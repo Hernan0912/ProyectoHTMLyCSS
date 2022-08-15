@@ -38,13 +38,18 @@
         display: flex;
         flex-direction: column;
         border: map-get($map: $paleta, $key: 'black') .5rem solid;
-        border-radius: 3rem;
+        border-radius: 2rem;
     }
 
   @include media (tablet){
         padding: 1rem;
         margin: 1rem;
         border: map-get($map: $paleta, $key: 'black') .5rem solid;
+  }
+  @include media (desktop){
+    &:hover{
+        transform: scale(1.1);
+    }  
   }
 }
 
@@ -132,12 +137,12 @@
 		"cam1 cam2 cam3"
 		"moto1 moto2 moto3";
         background-color: $backColor;
-        border-radius: 3rem;
+        border-radius: 2rem;
     }
 }
 
 .auto__pie{
-    background: $degradeGrisBlanco;
+    background-color: map-get($map: $paleta, $key: 'mainColor');
     text-align: center;
     font-size: $textSm + 1rem;
 }
