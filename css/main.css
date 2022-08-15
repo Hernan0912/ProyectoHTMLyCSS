@@ -1,14 +1,3 @@
-/*$mainColor:lightblue;
-$secondaryColor:blue;
-$thirdColor:yellow;
-$keyColor:red;
-$white:white;
-$black:black;
-$grey:dimgrey;
-$softGrey:grey;
-$textArea:beige;
-$softColor: rgb(50, 50, 50);
-$backColor:rgba(255, 255, 255, 0.2);*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300&display=swap");
 .formulario {
   display: flex;
@@ -33,8 +22,20 @@ $backColor:rgba(255, 255, 255, 0.2);*/
     flex-direction: row;
   }
 }
-.formulario label {
-  font-size: 3rem;
+@media (max-width: 279px) {
+  .formulario label {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 280px) {
+  .formulario label {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 780px) {
+  .formulario label {
+    font-size: 3rem;
+  }
 }
 .formulario legend {
   font-size: 3rem;
@@ -65,25 +66,25 @@ $backColor:rgba(255, 255, 255, 0.2);*/
 @media (max-width: 279px) {
   .formulario .formulario__dos .formulario__consulta {
     border: black outset 2px;
-    background-color: beige;
+    background-color: lightgrey;
     font-size: 2rem;
     width: 80%;
-    margin-left: 5rem;
+    margin-left: 3.5rem;
   }
 }
 @media (min-width: 280px) {
   .formulario .formulario__dos .formulario__consulta {
     border: black outset 2px;
-    background-color: beige;
+    background-color: lightgrey;
     font-size: 2rem;
     width: 80%;
-    margin-left: 5rem;
+    margin-left: 3.5rem;
   }
 }
 @media (min-width: 780px) {
   .formulario .formulario__dos .formulario__consulta {
     border: black outset 2px;
-    background-color: beige;
+    background-color: lightgrey;
     font-size: 2rem;
     margin-left: 0;
     width: 100%;
@@ -96,15 +97,16 @@ $backColor:rgba(255, 255, 255, 0.2);*/
 }
 .formulario .formulario__dos .botones .formulario__cancelar, .formulario .formulario__dos .botones .formulario__enviar {
   font-size: 2rem;
+  font-weight: 700;
   width: 45%;
   height: auto;
-  background: linear-gradient(to top, red, orange);
+  background-color: orange;
 }
 .formulario .formulario__dos .botones .formulario__cancelar:hover, .formulario .formulario__dos .botones .formulario__enviar:hover {
   border: outset 1px black;
 }
 .formulario .formulario__dos .botones .formulario__enviar {
-  background: linear-gradient(to top, green, lightgreen);
+  background-color: lightgreen;
 }
 .formulario select {
   font-size: 2rem;
@@ -115,12 +117,12 @@ $backColor:rgba(255, 255, 255, 0.2);*/
 
 @media (max-width: 279px) {
   form {
-    background: grey;
+    background: linear-gradient(to top, white, lightblue);
   }
 }
 @media (min-width: 280px) {
   form {
-    background: grey;
+    background: linear-gradient(to top, white, lightblue);
   }
 }
 @media (min-width: 780px) {
@@ -128,7 +130,6 @@ $backColor:rgba(255, 255, 255, 0.2);*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: grey;
     box-shadow: 10px 6px 12px 3px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 6px 12px 3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 6px 12px 3px rgba(0, 0, 0, 0.75);
@@ -137,7 +138,7 @@ $backColor:rgba(255, 255, 255, 0.2);*/
 @media (min-width: 1024px) {
   form {
     flex-direction: column;
-    background: grey;
+    width: 50%;
     box-shadow: 17px 5px 10px 3px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 17px 5px 10px 3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 17px 5px 10px 3px rgba(0, 0, 0, 0.75);
@@ -148,23 +149,117 @@ $backColor:rgba(255, 255, 255, 0.2);*/
   padding: 1rem;
 }
 
-iframe {
-  width: 100%;
-  height: 500px;
+@media (max-width: 279px) {
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media (min-width: 280px) {
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media (min-width: 780px) {
+  iframe {
+    width: 100%;
+    height: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  iframe {
+    width: 600px;
+    height: 800px;
+  }
+}
+
+@media (max-width: 279px) {
+  .reserva {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 280px) {
+  .reserva {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 780px) {
+  .reserva {
+    font-size: 2rem;
+  }
+}
+
+#reserva {
+  background-color: lightblue;
+}
+
+@media (max-width: 279px) {
+  .solicitar {
+    font-weight: 700;
+    text-align: center;
+    background: grey;
+    margin: 2rem;
+    justify-content: center;
+  }
+  .solicitar .boton__solicitar p {
+    color: black;
+  }
+}
+@media (min-width: 280px) {
+  .solicitar {
+    font-weight: 700;
+    text-align: center;
+    background: grey;
+    margin: 2rem;
+    justify-content: center;
+  }
+  .solicitar .boton__solicitar p {
+    color: black;
+  }
+}
+@media (min-width: 1024px) {
+  .solicitar:hover {
+    background: linear-gradient(to top, white, grey);
+  }
 }
 
 nav {
-  background-image: url(../img/cielo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: space-between;
   width: auto;
   grid-area: nav;
 }
-nav #indice__logo {
-  width: 6rem;
-  margin-left: 2rem;
+@media (max-width: 279px) {
+  nav #indice__logo {
+    width: 6rem;
+    margin-left: 2rem;
+    border-radius: 50%;
+  }
+}
+@media (min-width: 280px) {
+  nav #indice__logo {
+    width: 6rem;
+    margin-left: 2rem;
+    border-radius: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  nav #indice__logo:hover {
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
 }
 nav ul {
   display: flex;
@@ -213,6 +308,14 @@ nav ul li a {
   font-size: 3rem;
 }
 
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -264,20 +367,45 @@ h3 {
   }
 }
 
-aside {
-  grid-area: aside;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 5rem;
-  border: dimgrey solid 1rem;
-  background-color: grey;
+@media (max-width: 279px) {
+  aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    border: black solid 5px;
+    background-color: lightblue;
+  }
+  aside div ul li {
+    margin: 2rem;
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
-aside div ul li {
-  margin: 2rem;
-  list-style: none;
-  font-size: 2rem;
-  text-align: center;
+@media (min-width: 280px) {
+  aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    border: black solid 5px;
+    background-color: lightblue;
+  }
+  aside div ul li {
+    margin: 2rem;
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media (min-width: 780px) {
+  aside {
+    border-top: black solid 5px;
+    border-right: black solid 5px;
+  }
 }
 
 header {
@@ -300,7 +428,6 @@ main {
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
   grid-area: main;
   overflow: hidden;
 }
@@ -308,6 +435,25 @@ main {
 a {
   text-decoration: none;
   color: black;
+}
+
+.errorMain {
+  background-image: none;
+}
+
+.errorImagen {
+  width: 100%;
+}
+
+.errorMesagge {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .errorMesagge p:hover {
+    text-decoration: underline;
+  }
 }
 
 .logos__pagos {
@@ -342,23 +488,22 @@ a {
   }
 }
 
-.navegacion__seleccion--encendido {
-  color: yellow;
-}
-
-.navegacion__seleccion:hover {
-  color: yellow;
+.moto__titulo {
+  text-align: center;
+  background-color: blue;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  margin-bottom: 1rem;
 }
 
 .coberturas__moto, .coberturas__camioneta, .coberturas__auto {
   margin: 1rem;
   text-align: center;
-  background: linear-gradient(to top, lightblue, blue);
-  border-radius: 5rem;
+  background: lightblue;
+  border-radius: 2rem;
 }
 .coberturas__moto .coberturaTitulos, .coberturas__camioneta .coberturaTitulos, .coberturas__auto .coberturaTitulos {
-  padding-top: 2rem;
-  text-decoration: underline;
+  padding: 2rem;
 }
 .coberturas__moto P, .coberturas__camioneta P, .coberturas__auto P {
   color: black;
@@ -388,11 +533,11 @@ a {
 }
 
 .coberturas__auto {
-  background: linear-gradient(to top, pink, red);
+  background: lightblue;
 }
 
 .coberturas__camioneta {
-  background: linear-gradient(to top, lightgreen, green);
+  background: lightblue;
 }
 
 .borde {
@@ -498,6 +643,54 @@ p code {
   color: black;
 }
 
+section {
+  grid-area: section;
+}
+
+#grid {
+  display: grid;
+  grid-template-areas: "nav nav" "header header" "main main" "footer footer";
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+}
+@media (max-width: 600px) {
+  #grid {
+    grid-template-areas: "nav" "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 279px) {
+  #error__page {
+    display: grid;
+    grid-template-areas: "nav" "main" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+@media (min-width: 280px) {
+  #error__page {
+    display: grid;
+    grid-template-areas: "nav" "main" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+@media (min-width: 780px) {
+  #error__page {
+    display: grid;
+    grid-template-areas: "nav nav" "main main" "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, auto);
+    overflow: hidden;
+  }
+}
+
+.div__error {
+  height: 100%;
+}
+
 .grid__flota {
   display: grid;
 }
@@ -539,7 +732,7 @@ p code {
     display: flex;
     flex-direction: column;
     border: black 0.5rem solid;
-    border-radius: 3rem;
+    border-radius: 2rem;
   }
 }
 @media (min-width: 280px) {
@@ -549,7 +742,7 @@ p code {
     display: flex;
     flex-direction: column;
     border: black 0.5rem solid;
-    border-radius: 3rem;
+    border-radius: 2rem;
   }
 }
 @media (min-width: 780px) {
@@ -557,6 +750,11 @@ p code {
     padding: 1rem;
     margin: 1rem;
     border: black 0.5rem solid;
+  }
+}
+@media (min-width: 1024px) {
+  .imagen__flota:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -638,22 +836,35 @@ p code {
     grid-template-rows: auto;
     grid-template-areas: "auto1 auto2 auto3" "cam1 cam2 cam3" "moto1 moto2 moto3";
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 3rem;
+    border-radius: 2rem;
   }
 }
 
 .auto__pie {
-  background: linear-gradient(to top, white, grey);
+  background-color: lightblue;
   text-align: center;
   font-size: 2rem;
 }
 
-footer {
-  grid-area: footer;
+@media (max-width: 279px) {
+  footer {
+    grid-area: footer;
+  }
+}
+@media (min-width: 280px) {
+  footer {
+    grid-area: footer;
+  }
+}
+@media (min-width: 780px) {
+  footer {
+    grid-area: footer;
+  }
 }
 @media (max-width: 279px) {
   footer .pie__footer {
     display: flex;
+    height: 100%;
     flex-direction: column;
     background-color: black;
     font-size: 0.5rem;
@@ -662,6 +873,7 @@ footer {
 @media (min-width: 280px) {
   footer .pie__footer {
     display: flex;
+    height: 100%;
     flex-direction: column;
     background-color: black;
     font-size: 0.5rem;
@@ -724,6 +936,22 @@ footer .pie__footer .img-footer .redesSociales {
   footer .pie__footer p {
     margin-left: 1rem;
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 279px) {
+  #footer__large {
+    height: 80vh;
+  }
+}
+@media (min-width: 280px) {
+  #footer__large {
+    height: 80vh;
+  }
+}
+@media (min-width: 780px) {
+  #footer__large {
+    height: 40vh;
   }
 }
 

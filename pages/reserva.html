@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+<link rel="shortcut icon" href="../img/favicon.jfif">
+<!--BS CSS-->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<!--Mi CSS-->
+<link rel="stylesheet" href="../css/main.css">
+<body id="reserva">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-lightblue">
+		<div class="container-fluid">
+		<a class="navbar-brand" href="../index.html">
+			<img id="indice__logo" src="../img/logo.png" alt="logo de Alpha, acceso al inicio">
+		</a>
+		<button class="navbar-toggler btn__color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li class="nav-item">
+			<a class="animacion__navbar nav-link" aria-current="page" href="../index.html">FORMULARIO</a>
+			</li>
+			<li class="nav-item">
+			<a class="animacion__navbar nav-link" aria-current="page" href="../pages/coberturas.html">COBERTURAS</a>
+			</li>
+			<li class="nav-item">
+			<a class="animacion__navbar nav-link active" href="../pages/flota.html">FLOTA</a>
+			</li>
+			<li class="nav-item">
+			<a class="animacion__navbar nav-link " href="../pages/precios.html">PRECIOS</a>
+			</li>
+			<li class="nav-item">
+			<a class="animacion__navbar nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+			</li>
+		</ul>
+		</div>
+	</div>
+	</nav>
+
+    <section class="formulario">
+            <form action="">
+                <div>
+                    <div class="reserva">
+                        <label for="nombre__tarjeta">&nbsp;Nombre como figura en la tarjeta:</label>
+                        <input type="text" id="nombre__tarjeta" placeholder="Ej: Rodrigo Hernan Blanco">
+                        <label for="numero_tarjeta">&nbsp;Número de Tarjeta:</label>
+                        <input type="number" id="numero__tarjeta" placeholder="xxxx-xxxx-xxxx-xxxx">
+                        <label for="venc__tarjeta">&nbsp;Fecha de vencimiento de la tarjeta:</label>
+                        <input type="number" id="venc__tarjeta" placeholder="mm/aa">
+                        <label for="cod__tarjeta">&nbsp;Código de seguridad:</label>
+                        <input type="number" id="cod__tarjeta" placeholder="xxx">
+                        <label for="direccion">&nbsp;Dirección:</label>
+                        <input type="text" id="ocupantes" placeholder="calleFalsa 123">
+                        <label for="ocupantes">&nbsp;Cantidad de personas:</label>
+                        <input type="number" id="direccion" placeholder="ingrese un número">
+                        <label for="desde">&nbsp;Destino desde:</label>
+                        <input type="text" id="desde" placeholder="ingrese una ciudad/país">
+                        <label for="hasta">&nbsp;Destino hasta:</label>
+                        <input type="text" id="hasta" placeholder="ingrese una ciudad/país">
+                        <label for="desde">&nbsp;Fecha desde:</label>
+                        <input type="date" id="fecha__desde" placeholder="ingrese una fecha">
+                        <label for="fecha__hasta">&nbsp;Fecha hasta:</label>
+                        <input type="date" id="fecha__hasta" placeholder="ingrese una fecha">
+                    </div>
+                    <div class="solicitar">
+                        <a class="boton__solicitar" href="../pages/error404.html">
+                            <p>Reservar</p>
+                        </a>
+                    </div>
+                </div>
+            </form>
+    </section>
+    <footer>
+        <div class="pie__footer">
+            <div>
+                <p>Seguinos en nuestras redes sociales:</p>
+            </div>
+            <div class="img-footer">
+                <a href="https://facebook.com" target="_blank">
+                    <img class="redesSociales" src="../img/facebook.png" alt="seguinos en facebook">
+                </a>
+                    <a href="https://instagram.com" target="_blank">
+                    <img src="../img/instagram.png" alt="seguinos en instagram">
+                </a>
+                    <a href="https://twitter.com" target="_blank">
+                    <img class="redesSociales" src="../img/twitter.png" alt="seguinos en twitter">
+                </a>
+            </div>
+            <div>
+                <p>Derechos reservados Alpha - RentMotors © 2022</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
