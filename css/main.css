@@ -63,6 +63,9 @@
     font-size: 100%;
   }
 }
+.formulario .formulario__dos .formulario__consulta {
+  border-radius: 5px;
+}
 @media (max-width: 279px) {
   .formulario .formulario__dos .formulario__consulta {
     border: black outset 2px;
@@ -101,6 +104,7 @@
   width: 45%;
   height: auto;
   background-color: orange;
+  border-radius: 5px;
 }
 .formulario .formulario__dos .botones .formulario__cancelar:hover, .formulario .formulario__dos .botones .formulario__enviar:hover {
   border: outset 1px black;
@@ -115,6 +119,9 @@
   font-size: 2rem;
 }
 
+form {
+  border-radius: 1rem;
+}
 @media (max-width: 279px) {
   form {
     background: linear-gradient(to top, white, lightblue);
@@ -204,6 +211,10 @@
   background-color: lightblue;
 }
 
+.solicitar {
+  border-radius: 5px;
+  width: 90%;
+}
 @media (max-width: 279px) {
   .solicitar {
     font-weight: 700;

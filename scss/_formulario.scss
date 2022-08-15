@@ -44,6 +44,7 @@
 		    font-size: 100%;
         }
         .formulario__consulta{
+            border-radius: 5px;
             @include media (mobile){
                 border: map-get($map: $paleta, $key: 'black') outset 2px;
                 background-color: map-get($map: $paleta, $key: 'textArea');
@@ -63,12 +64,14 @@
             display: flex;
 		    justify-content: space-between;
 		    padding: 1rem;
+
             .formulario__cancelar{
                 font-size: 2rem;
                 font-weight: $textBold;
 		        width: $w-45;
 		        height: auto;
                 background-color: map-get($map: $paleta, $key: 'orange');
+                border-radius: 5px;
                 &:hover{
                     border: outset 1px map-get($map: $paleta, $key: 'black');
                 }
@@ -88,6 +91,7 @@
 }
 
 form{
+    border-radius: 1rem;
     @include media (mobile){
         background:$degradeBlancoCeleste;
     }
@@ -148,6 +152,8 @@ iframe{
 }
 
 .solicitar{
+    border-radius: 5px;
+    width: 90%;
     @include media (mobile){
         font-weight: $textBold;
         text-align: center;
