@@ -705,6 +705,23 @@ section {
   .errorMain {
     width: auto;
     height: auto;
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 279px) {
+  .errorImagen {
+    width: 100vw;
+  }
+}
+@media (min-width: 280px) {
+  .errorImagen {
+    width: 100vw;
+  }
+}
+@media (min-width: 780px) {
+  .errorImagen {
+    width: auto;
   }
 }
 
