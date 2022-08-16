@@ -711,12 +711,12 @@ section {
 
 @media (max-width: 279px) {
   .errorImagen {
-    width: 100vw;
+    width: 140vw;
   }
 }
 @media (min-width: 280px) {
   .errorImagen {
-    width: 100vw;
+    width: 140vw;
   }
 }
 @media (min-width: 780px) {
