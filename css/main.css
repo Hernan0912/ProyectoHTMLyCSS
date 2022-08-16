@@ -448,25 +448,6 @@ a {
   color: black;
 }
 
-.errorMain {
-  background-image: none;
-}
-
-.errorImagen {
-  width: 100%;
-}
-
-.errorMesagge {
-  margin-left: 2rem;
-  display: flex;
-  align-items: center;
-}
-@media (min-width: 1024px) {
-  .errorMesagge p:hover {
-    text-decoration: underline;
-  }
-}
-
 .logos__pagos {
   display: flex;
 }
@@ -698,8 +679,33 @@ section {
   }
 }
 
-.div__error {
-  height: 100%;
+@media (max-width: 279px) {
+  .errorMain {
+    height: 75vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    background-image: none;
+  }
+}
+@media (min-width: 280px) {
+  .errorMain {
+    height: 75vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    background-image: none;
+  }
+}
+@media (min-width: 1024px) {
+  .errorMain {
+    width: auto;
+    height: auto;
+  }
 }
 
 .grid__flota {
@@ -940,22 +946,6 @@ footer .pie__footer .img-footer .redesSociales {
   footer .pie__footer p {
     margin-left: 1rem;
     font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 279px) {
-  #footer__large {
-    height: 80vh;
-  }
-}
-@media (min-width: 280px) {
-  #footer__large {
-    height: 80vh;
-  }
-}
-@media (min-width: 780px) {
-  #footer__large {
-    height: 40vh;
   }
 }
 

@@ -96,26 +96,7 @@ a{
 	color: map-get($map: $paleta, $key: 'black');
 }
 
-.errorMain{
-        background-image: none;
-}
 
-.errorImagen{
-    width: 100%;
-}
-
-.errorMesagge{
-    margin-left: 2rem;
-    display: flex;
-    align-items: center;
-    p{
-        @include media (desktop){
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
-}
 
 .logos__pagos{
     display: flex;
@@ -313,7 +294,19 @@ section{
     }
 }
 
-.div__error{
-    height: 100%;
-}
+.errorMain{
+    @include media (mobile){
+        height: 75vh;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: map-get($map: $paleta, $key: 'mainColor');
+        background-image: none;
+    }
+   @include media (desktop){
+        width: auto;
+        height: auto;
+    }
+} 
 
