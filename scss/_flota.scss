@@ -37,15 +37,10 @@
         margin: 1rem;
         display: flex;
         flex-direction: column;
-        border: map-get($map: $paleta, $key: 'black') .5rem solid;
-        border-radius: 2rem;
+        border: map-get($map: $paleta, $key: 'black') .3rem solid;
+        border-radius: 1rem;
     }
 
-  @include media (tablet){
-        padding: 1rem;
-        margin: 1rem;
-        border: map-get($map: $paleta, $key: 'black') .5rem solid;
-  }
   @include media (desktop){
     &:hover{
         transform: scale(1.1);
@@ -137,7 +132,7 @@
 		"cam1 cam2 cam3"
 		"moto1 moto2 moto3";
         background-color: $backColor;
-        border-radius: 2rem;
+        border-radius: 1rem;
     }
 }
 

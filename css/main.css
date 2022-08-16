@@ -502,8 +502,8 @@ a {
 .moto__titulo {
   text-align: center;
   background-color: blue;
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -511,7 +511,7 @@ a {
   margin: 1rem;
   text-align: center;
   background: lightblue;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 .coberturas__moto .coberturaTitulos, .coberturas__camioneta .coberturaTitulos, .coberturas__auto .coberturaTitulos {
   padding: 2rem;
@@ -742,8 +742,8 @@ section {
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    border: black 0.5rem solid;
-    border-radius: 2rem;
+    border: black 0.3rem solid;
+    border-radius: 1rem;
   }
 }
 @media (min-width: 280px) {
@@ -752,15 +752,8 @@ section {
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    border: black 0.5rem solid;
-    border-radius: 2rem;
-  }
-}
-@media (min-width: 780px) {
-  .imagen__flota {
-    padding: 1rem;
-    margin: 1rem;
-    border: black 0.5rem solid;
+    border: black 0.3rem solid;
+    border-radius: 1rem;
   }
 }
 @media (min-width: 1024px) {
@@ -847,7 +840,7 @@ section {
     grid-template-rows: auto;
     grid-template-areas: "auto1 auto2 auto3" "cam1 cam2 cam3" "moto1 moto2 moto3";
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 2rem;
+    border-radius: 1rem;
   }
 }
 

@@ -137,8 +137,8 @@ a{
 .moto__titulo{
     text-align: center;
     background-color: map-get($map: $paleta, $key: 'secondaryColor');
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -146,7 +146,7 @@ a{
     margin: 1rem;
     text-align: center;
     background: map-get($map: $paleta, $key: 'mainColor');
-    border-radius: 2rem;
+    border-radius: 1rem;
     .coberturaTitulos{
         padding: 2rem;
     }
