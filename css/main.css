@@ -8,13 +8,11 @@
 @media (max-width: 279px) {
   .formulario {
     flex-direction: column;
-    overflow: hidden;
   }
 }
 @media (min-width: 280px) {
   .formulario {
     flex-direction: column;
-    overflow: hidden;
   }
 }
 @media (min-width: 1024px) {
@@ -39,6 +37,9 @@
 }
 .formulario legend {
   font-size: 3rem;
+}
+.formulario .formulario__uno {
+  padding-top: 1rem;
 }
 .formulario .email {
   margin-bottom: 2rem;
@@ -385,7 +386,7 @@ h3 {
     justify-content: center;
     align-items: center;
     font-size: 5rem;
-    border: black solid 5px;
+    border: blue solid 5px;
     background-color: lightblue;
   }
   aside div ul li {
@@ -402,7 +403,7 @@ h3 {
     justify-content: center;
     align-items: center;
     font-size: 5rem;
-    border: black solid 5px;
+    border: blue solid 5px;
     background-color: lightblue;
   }
   aside div ul li {
@@ -414,8 +415,7 @@ h3 {
 }
 @media (min-width: 780px) {
   aside {
-    border-top: black solid 5px;
-    border-right: black solid 5px;
+    border-top: none;
   }
 }
 
