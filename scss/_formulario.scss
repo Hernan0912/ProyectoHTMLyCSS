@@ -2,7 +2,7 @@
         display: flex;
         justify-content: space-around;
         color:map-get($map: $paleta, $key: 'black');
-        padding: 1rem;
+        padding: 2rem;
         @include media (mobile){
             flex-direction: column;
         }
@@ -26,8 +26,15 @@
         padding-top: 1rem;
     }
     .email{
-        margin-bottom: 2rem;
-		font-size: $textMd - 1rem;
+        @include media (mobile){
+            margin-bottom: 2rem;
+            font-size: $textSm + 1rem;
+        }
+        @include media (tablet){
+            font-size: $textMd - .5rem; 
+            width: 100%;
+        }
+            
     }
     .formulario__pedido{
         font-size: $textMd;
@@ -94,6 +101,7 @@
 
 form{
     border-radius: 1rem;
+    margin-right: 1rem;
     @include media (mobile){
         background:$degradeBlancoCeleste;
     }
@@ -113,11 +121,6 @@ form{
         -webkit-box-shadow: 17px 5px 10px 3px rgba(0,0,0,0.75);
         -moz-box-shadow: 17px 5px 10px 3px rgba(0,0,0,0.75);
     }
-}
-
-.mapa__ubicacion{
-	padding: 1rem;
-    
 }
 
 iframe{

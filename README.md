@@ -7,8 +7,11 @@ se accede a la pagina de error.
 
 Links:
 
+Repositorio:
 https://github.com/Hernan0912/HernanRepositorio
 
+Pages:
 https://github.com/Hernan0912/HernanRepositorio/settings/pages
 
+Netlify:
 https://master--thunderous-llama-5c5a0e.netlify.app/index.html

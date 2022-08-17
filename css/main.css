@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   color: black;
-  padding: 1rem;
+  padding: 2rem;
 }
 @media (max-width: 279px) {
   .formulario {
@@ -41,9 +41,23 @@
 .formulario .formulario__uno {
   padding-top: 1rem;
 }
-.formulario .email {
-  margin-bottom: 2rem;
-  font-size: 2rem;
+@media (max-width: 279px) {
+  .formulario .email {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 280px) {
+  .formulario .email {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 780px) {
+  .formulario .email {
+    font-size: 2.5rem;
+    width: 100%;
+  }
 }
 .formulario .formulario__pedido {
   font-size: 3rem;
@@ -122,6 +136,7 @@
 
 form {
   border-radius: 1rem;
+  margin-right: 1rem;
 }
 @media (max-width: 279px) {
   form {
@@ -151,10 +166,6 @@ form {
     -webkit-box-shadow: 17px 5px 10px 3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 17px 5px 10px 3px rgba(0, 0, 0, 0.75);
   }
-}
-
-.mapa__ubicacion {
-  padding: 1rem;
 }
 
 @media (max-width: 279px) {
