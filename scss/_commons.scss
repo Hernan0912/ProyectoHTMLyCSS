@@ -5,7 +5,6 @@
     font-size: 62.5%;
 }
 
-
 h1,
 h2,
 h3{
@@ -39,7 +38,6 @@ p{
     @include media (tablet){
         font-size: $textMd - .5rem;
     }
-  
 }
 
 aside{
@@ -96,23 +94,21 @@ a{
 	color: map-get($map: $paleta, $key: 'black');
 }
 
-
-
 .logos__pagos{
     display: flex;
     @include media (mobile){
         flex-direction: column;
 		align-items: flex-start;
-        }
-        @include media (tablet){
+    }
+    @include media (tablet){
             flex-direction: row;
             justify-content: space-around;
-        }
-        img{
-            @include media (mobile){
+    }
+    img{
+        @include media (mobile){
             margin: 2rem;
-             }
-         }
+        }
+    }
 }
 
 .moto__titulo{
@@ -215,8 +211,7 @@ a{
             }
             .diaPrecio{
                 padding: 0 4rem;
-            }
-            
+            } 
         }
         @include media (tablet){
             font-size: $textExtraLg * 2;
@@ -264,7 +259,6 @@ section{
     "footer footer";
     grid-template-columns: repeat(2,auto);
     grid-template-rows: repeat(4,auto);
-  
     @media (max-width: 600px) {
         grid-template-areas: "nav" "header" "main" "footer";
         grid-template-columns: 100%;
