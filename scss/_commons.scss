@@ -299,7 +299,6 @@ section{
         background-image: none;
     }
    @include media (desktop){
-        width: auto;
         height: auto;
         padding: 5rem;
     }
@@ -307,10 +306,16 @@ section{
 
 .errorImagen{
     @include media (mobile){
-        width:140vw;
+       width: 120vw;
     }
     @include media (tablet){
         width: auto;
+    }
+}
+
+.prueba{
+    @include media (mobile){
+        padding: 5rem;
     }
 }
 

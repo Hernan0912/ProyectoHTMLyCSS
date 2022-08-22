@@ -714,7 +714,6 @@ section {
 }
 @media (min-width: 1024px) {
   .errorMain {
-    width: auto;
     height: auto;
     padding: 5rem;
   }
@@ -722,17 +721,28 @@ section {
 
 @media (max-width: 279px) {
   .errorImagen {
-    width: 140vw;
+    width: 120vw;
   }
 }
 @media (min-width: 280px) {
   .errorImagen {
-    width: 140vw;
+    width: 120vw;
   }
 }
 @media (min-width: 780px) {
   .errorImagen {
     width: auto;
+  }
+}
+
+@media (max-width: 279px) {
+  .prueba {
+    padding: 5rem;
+  }
+}
+@media (min-width: 280px) {
+  .prueba {
+    padding: 5rem;
   }
 }
 
